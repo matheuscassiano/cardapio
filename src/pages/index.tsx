@@ -1,16 +1,22 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router'
 import styled from 'styled-components'
+import InputText from '../components/TextInput'
 
-const Text = styled.h1`
+const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  margin-top: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 300;
+  flex-direction: column;
 `
 const Home: React.FC<AppProps> = () => {
-  return <Text>My Typescript Page</Text>
+  return (
+    <Container>
+      <InputText placeholder={"Nome"} />
+      <InputText placeholder={"Email ou Telefone"} />
+    </Container>
+  )
 }
 
 export default Home
