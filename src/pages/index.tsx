@@ -5,6 +5,8 @@ import SubmitButton from '../components/SubmitButton'
 import SocialButton from '../components/SocialButton'
 import InputText from '../components/TextInput/index.tsx'
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
 
 const Container = styled.div`
   width: 100%;
@@ -29,15 +31,26 @@ Container.Wrapper = styled.span`
 
 const Home: React.FC<AppProps> = () => {
   return (
-    <Container>
-      <InputText placeholder={"Nome"} />
-      <InputText placeholder={"Email ou Telefone"} />
-      <SubmitButton text={"Entrar"} />
-      <Container.Wrapper>ou</Container.Wrapper>
-      <SocialButton logo={"A"} bgColor={'#3D5A99'} textColor={'#FFF'} text={"Continuar com Faceboock"} />
-      <SocialButton logo={"G"} bgColor={'#FFFFFF'} textColor={'#000'} text={"Continuar com Google"} />
-      <SocialButton logo={"A"} bgColor={'#000000'} textColor={'#FFF'} text={"Continuar com Apple"} />
-    </Container>
+    <>
+      <Swiper
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+      >
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+      </Swiper>
+      <Container>
+        <InputText placeholder={"Nome"} />
+        <InputText placeholder={"Email ou Telefone"} />
+        <SubmitButton text={"Entrar"} />
+        <Container.Wrapper>ou</Container.Wrapper>
+        <SocialButton logo={"A"} bgColor={'#3D5A99'} textColor={'#FFF'} text={"Continuar com Faceboock"} />
+        <SocialButton logo={"G"} bgColor={'#FFFFFF'} textColor={'#000'} text={"Continuar com Google"} />
+        <SocialButton logo={"A"} bgColor={'#000000'} textColor={'#FFF'} text={"Continuar com Apple"} />
+      </Container>
+    </>
   )
 }
 
