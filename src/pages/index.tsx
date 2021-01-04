@@ -1,43 +1,60 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router'
-import styled from 'styled-components'
+import Head from 'next/head'
 
 import SubmitButton from '../components/SubmitButton'
 import SocialButton from '../components/SocialButton'
-import InputText from '../components/TextInput/index.tsx'
+import InputFild from '../components/InputFild'
 
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { SwiperSlide } from 'swiper/react';
+import 'swiper/components/pagination/pagination.min.css';
+import 'swiper/swiper-bundle.css';
 
-const Container = styled.div`
-  width: 100%;
-  padding: 3em 0;
-  margin-top: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: #FFFFFF;
-  box-shadow: 0px -5px 100px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 50px 50px 0px 0px;
-  position: fixed;
-  bottom: 0;
-  z-index: 2;
-`
-Container.Wrapper = styled.span`
-  font-size: .8em;
-  padding: 1em 0;
-  color: rgba(0, 0, 0, 0.5);
-`
+import { Container } from '../styles/Container'
+import { Wrapper, Slider, Picture } from '../styles/homeStyle'
+
+// import Image from 'next/image'
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const Home: React.FC<AppProps> = () => {
   return (
-    <Container>
-      <InputText placeholder={"Nome"} />
-      <InputText placeholder={"Email ou Telefone"} />
-      <SubmitButton text={"Entrar"} />
-      <Container.Wrapper>ou</Container.Wrapper>
-      <SocialButton logo={"A"} bgColor={'#3D5A99'} textColor={'#FFF'} text={"Continuar com Faceboock"} />
-      <SocialButton logo={"G"} bgColor={'#FFFFFF'} textColor={'#000'} text={"Continuar com Google"} />
-      <SocialButton logo={"A"} bgColor={'#000000'} textColor={'#FFF'} text={"Continuar com Apple"} />
-    </Container>
+    <>
+     <Head>
+        <title>Cardápio Digital</title>
+      </Head>
+      <Slider
+      slidesPerView={1}
+      autoplay={true}
+      pagination={{ clickable: true }} >
+        <SwiperSlide>
+          <Picture src="https://www.recipetineats.com/wp-content/uploads/2019/09/Ramen-3.jpg" alt=""/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Picture src="https://www.recipetineats.com/wp-content/uploads/2019/09/Ramen_RamenStreet_YM-2.jpg" alt=""/>
+        </SwiperSlide>
+      </Slider>
+      <Container>
+        <InputFild name="Nome" placeholder="Nome" />
+        <InputFild name="Indicador" placeholder="Email ou Telefone" />
+        <SubmitButton text="Entrar" />
+        <Wrapper>ou</Wrapper>
+        <SocialButton 
+        bgColor='#3D5A99'
+        textColor='#FFFFFF'
+        text="Continuar com Facebook" 
+        logo="https://cdn.iconscout.com/icon/free/png-256/facebook-1865900-1581916.png" />
+        <SocialButton 
+        textColor='#000000' 
+        bgColor='#FFFFFF'
+        text="Continuar com Google"
+        logo="https://cdn.iconscout.com/icon/free/png-256/google-231-432517.png" />
+        <SocialButton 
+        bgColor='#000000'
+        textColor='#FFFFFF'
+        text="Continuar com Apple"
+        logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXDzlgYsOMUxG8ejMtf11DfUObotAU7h-UvA&usqp=CAU" />
+      </Container>
+    </>
   )
 }
 
