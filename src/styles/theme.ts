@@ -1,16 +1,21 @@
 const theme = {
   color: {
     background: 'white',
-    text: '#e1e1e6',
+    text: 'black',
     primary: '#8257E6'
   },
 
   font: {
     size: {
       small: '.8rem',
+      regular: '1.3rem',
+      medium: '1.8rem',
+      big: '2.3rem'
     },
     weight: {
-      regular: 500,
+      regular: 400,
+      medium: 500,
+      big: 600,
     }
   },
 
@@ -19,8 +24,10 @@ const theme = {
     width: '100%',
     radius: '15px',
     gap: {
-      min: '.25em 0',
-      mid: '.5em 0',
+      small: '.25em 0',
+      regular: '.5em 0',
+      medium: '1em 0',
+      big: '2em 0',
     }, 
   },
   

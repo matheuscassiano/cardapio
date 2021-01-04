@@ -5,11 +5,11 @@ const Button = styled.button`
   height: ${props => props.theme.field.height};
   display: flex;
   align-items: center;
-  margin: ${props => props.theme.field.gap.min};
+  margin: ${props => props.theme.field.gap.small};
   padding: 0 2em;
   text-align: left;
-  font-size: ${props => props.theme.font.size};
-  font-weight: ${props => props.theme.font.weight};
+  font-size: ${props => props.theme.font.size.small};
+  font-weight: ${props => props.theme.font.weight.small};
   border-radius: ${props => props.theme.field.radius};
   border: ${props => props.bgColor == "#FFFFFF" ? '1px solid black' : '0'};
   color: ${props => props.textColor};

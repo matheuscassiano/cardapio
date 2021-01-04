@@ -1,15 +1,16 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router'
 import { Container } from '../../styles/Container'
-import { Background } from './styles'
+import { Background, Title, Subtitle } from './styles'
 import InputFild from '../../components/InputFild'
 
 const Home: React.FC<AppProps> = () => {
   return (
       <Background>
-        <h1>Verificação de mesa</h1>
+        <Title>Verificação de mesa</Title>
         <Container>
-          <h2>Preencha as Informações</h2>
+          <Subtitle>Preencha as Informações</Subtitle>
           <InputFild as="select">
+            <option disabled selected>Selecione sua</option>
             <option value="1">Mesa 01</option>
             <option value="2">Mesa 02</option>
             <option value="3">Mesa 03</option>
