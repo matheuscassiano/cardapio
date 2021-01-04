@@ -1,16 +1,16 @@
 import styled from 'styled-components'
 
 const Button = styled.button`
-  width: calc(100% - 6em);
+  width: ${props => props.theme.field.width};
   height: ${props => props.theme.field.height};
   display: flex;
   align-items: center;
-  margin: .25em 0;
+  margin: ${props => props.theme.field.gap.min};
   padding: 0 2em;
   text-align: left;
-  font-size: ${props => props.theme.button.fontSize};
-  font-weight: ${props => props.theme.button.fontWeight};
-  border-radius: ${props => props.theme.button.radius};
+  font-size: ${props => props.theme.font.size};
+  font-weight: ${props => props.theme.font.weight};
+  border-radius: ${props => props.theme.field.radius};
   border: ${props => props.bgColor == "#FFFFFF" ? '1px solid black' : '0'};
   color: ${props => props.textColor};
   background: ${props => props.bgColor};

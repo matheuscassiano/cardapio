@@ -5,16 +5,26 @@ const theme = {
     primary: '#8257E6'
   },
 
+  font: {
+    size: {
+      small: '.8rem',
+    },
+    weight: {
+      regular: 500,
+    }
+  },
+
   field: {
     height: '3em',
+    width: '100%',
+    radius: '15px',
+    gap: {
+      min: '.25em 0',
+      mid: '.5em 0',
+    }, 
   },
   
-  button: {
-    gapY: '.25em 0', 
-    fontWeight: 500,
-    fontSize: '.8rem',
-    radius: '15px',
-  }
+  button: { }
 }
 
 export default theme

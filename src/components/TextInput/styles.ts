@@ -1,14 +1,13 @@
 import styled from 'styled-components'
 
 const Input = styled.input`
-  width: calc(100% - 6em);
-  height: 3em;
-  border: 0;
+  width: ${props => props.theme.field.width};
+  height: ${props => props.theme.field.height};
   padding: 0 1em;
-  margin: .25em 0;
-  font-size: .8rem;
-  line-height: 18px;
-  border-radius: 1em;
+  margin: ${props => props.theme.field.gap.min};
+  font-size: ${props => props.theme.font.size};
+  font-weight: ${props => props.theme.font.weight};
+  border-radius: ${props => props.theme.field.radius};
   background-color: white;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 

@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
 const Button = styled.button`
-  width: calc(100% - 6em);
+  width: ${props => props.theme.field.width};
   height: ${props => props.theme.field.height};
   color: white;
-  margin: ${props => props.theme.button.gapY};
-  font-size: ${props => props.theme.button.fontSize};
-  font-weight: ${props => props.theme.button.fontWeight};
-  border-radius: ${props => props.theme.button.radius};
+  margin: ${props => props.theme.field.gap.min};
+  font-size: ${props => props.theme.font.size};
+  font-weight: ${props => props.theme.font.weight};
+  border-radius: ${props => props.theme.field.radius};
   background: #8BBE8A;
   box-shadow: 0px 0px 5px rgba(139, 190, 138, 0.25);
 `

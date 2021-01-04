@@ -10,12 +10,8 @@ import { SwiperSlide } from 'swiper/react';
 import 'swiper/components/pagination/pagination.min.css';
 import 'swiper/swiper-bundle.css';
 
-import {
-  Container,
-  Wrapper,
-  Slider,
-  Picture
-} from '../styles/homeStyle'
+import { Container } from '../styles/Container'
+import { Wrapper, Slider, Picture } from '../styles/homeStyle'
 
 // import Image from 'next/image'
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
