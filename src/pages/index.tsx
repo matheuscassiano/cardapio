@@ -1,54 +1,23 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router'
-import styled from 'styled-components'
 
 import SubmitButton from '../components/SubmitButton'
 import SocialButton from '../components/SocialButton'
 import InputText from '../components/TextInput/index.tsx'
 
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css';
+import { SwiperSlide } from 'swiper/react';
 import 'swiper/components/pagination/pagination.min.css';
+import 'swiper/swiper-bundle.css';
 
+import {
+  Container,
+  Wrapper,
+  Slider,
+  Picture
+} from '../styles/homeStyle'
 
-import Image from 'next/image'
-
+// import Image from 'next/image'
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
-
-const Container = styled.form`
-  width: 100%;
-  padding: 2.5em 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: #FFFFFF;
-  box-shadow: 0px -5px 100px 5px rgba(0, 0, 0, 0.25);
-  border-radius: 50px 50px 0px 0px;
-  position: fixed;
-  bottom: 0;
-  z-index: 2;
-`
-
-const Wrapper = styled.span`
-  font-size: .8em;
-  padding: 1em 0;
-  color: rgba(0, 0, 0, 0.5);
-`
-
-const Slider = styled(Swiper)`
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-const Picture = styled.img`
-  width: 100vw;
-  height: 100vh;
-  
-  object-fit: cover;
-`
 
 const Home: React.FC<AppProps> = () => {
   return (
