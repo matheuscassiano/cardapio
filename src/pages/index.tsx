@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 import SubmitButton from '../components/SubmitButton'
 import SocialButton from '../components/SocialButton'
-import InputText from '../components/TextInput/index.tsx'
+import InputText from '../components/TextInput'
 
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { SwiperSlide } from 'swiper/react';
