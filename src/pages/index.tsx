@@ -1,4 +1,5 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router'
+import Head from 'next/head'
 
 import SubmitButton from '../components/SubmitButton'
 import SocialButton from '../components/SocialButton'
@@ -22,6 +23,9 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 const Home: React.FC<AppProps> = () => {
   return (
     <>
+     <Head>
+        <title>Cardápio Digital</title>
+      </Head>
       <Slider
       slidesPerView={1}
       autoplay={true}
