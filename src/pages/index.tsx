@@ -45,7 +45,7 @@ const Home: React.FC<AppProps> = () => {
         <SocialButton 
         bgColor='#3D5A99'
         textColor='#FFFFFF'
-        text="Continuar com Faceboock" 
+        text="Continuar com Facebook" 
         logo="https://cdn.iconscout.com/icon/free/png-256/facebook-1865900-1581916.png" />
         <SocialButton 
         textColor='#000000' 

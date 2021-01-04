@@ -3,7 +3,6 @@ import styled from 'styled-components'
 const Button = styled.button`
   width: calc(100% - 6em);
   height: ${props => props.theme.field.height};
-  border: 0;
   color: white;
   margin: ${props => props.theme.button.gapY};
   font-size: ${props => props.theme.button.fontSize};
