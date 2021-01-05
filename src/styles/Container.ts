@@ -13,4 +13,6 @@ export const Container = styled.form`
   position: fixed;
   bottom: 0;
   z-index: 2;
+  position: ${props => props.position};
+  margin: auto;
 `

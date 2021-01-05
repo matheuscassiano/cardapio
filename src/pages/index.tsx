@@ -11,7 +11,7 @@ import 'swiper/components/pagination/pagination.min.css';
 import 'swiper/swiper-bundle.css';
 
 import { Container } from '../styles/Container'
-import { Wrapper, Slider, Picture } from '../styles/homeStyle'
+import { Wrapper, Slider } from '../styles/homeStyle'
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -26,10 +26,10 @@ const Home: React.FC<AppProps> = () => {
       autoplay={true}
       pagination={{ clickable: true }} >
         <SwiperSlide>
-          <Picture src="https://www.recipetineats.com/wp-content/uploads/2019/09/Ramen-3.jpg" alt=""/>
+          <img src="https://www.recipetineats.com/wp-content/uploads/2019/09/Ramen-3.jpg" alt=""/>
         </SwiperSlide>
         <SwiperSlide>
-          <Picture src="https://www.recipetineats.com/wp-content/uploads/2019/09/Ramen_RamenStreet_YM-2.jpg" alt=""/>
+          <img src="https://www.recipetineats.com/wp-content/uploads/2019/09/Ramen_RamenStreet_YM-2.jpg" alt=""/>
         </SwiperSlide>
       </Slider>
       <Container>

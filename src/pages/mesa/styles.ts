@@ -20,8 +20,24 @@ const Subtitle = styled.h2`
   font-size: ${props => props.theme.font.size.regular};
   font-weight: ${props => props.theme.font.weight.medium};
 `
+
+const Info = styled.p`
+  padding-bottom: 1.5em;
+  text-align: center;
+  width: ${props => props.theme.field.width};
+  margin: ${props => props.theme.field.gap.medium};
+  font-size: ${props => props.theme.font.size.regular};
+  font-weight: ${props => props.theme.font.weight.small};
+`
+
+const Button = styled.button`
+
+`
+
 export {
   Background,
   Title,
-  Subtitle
+  Subtitle,
+  Info,
+  Button
 }

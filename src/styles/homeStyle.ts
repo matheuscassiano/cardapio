@@ -14,15 +14,7 @@ const Slider = styled(Swiper)`
   justify-content: center;
 `;
 
-const Picture = styled.img`
-  width: 100vw;
-  height: 100vh;
-  
-  object-fit: cover;
-`
-
 export {
   Wrapper,
-  Slider,
-  Picture
+  Slider
 }
