@@ -3,10 +3,13 @@ import { Container } from '../../styles/Container'
 import { Background, Title, Subtitle } from './styles'
 import InputFild from '../../components/InputFild'
 
+import Image from 'next/image'
+
 const Home: React.FC<AppProps> = () => {
   return (
       <Background>
         <Title>Verificação de mesa</Title>
+        <Image src="/table.svg" width="300" height="300" alt="table"/>
         <Container>
           <Subtitle>Preencha as Informações</Subtitle>
           <InputFild as="select">
