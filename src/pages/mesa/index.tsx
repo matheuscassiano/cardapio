@@ -22,7 +22,7 @@ const Table: React.FC<AppProps> = () => {
       <Background>
         <Title>Verificação de mesa</Title>
         <Image src="/table.svg" alt="table" width={windowSize.width} height={windowSize.width * .7} />
-        <Container maxHeight={windowSize.height / 2}>
+        <Container>
           <div>
             <Subtitle>Preencha as Informações</Subtitle>
             <InputFild as="select">
