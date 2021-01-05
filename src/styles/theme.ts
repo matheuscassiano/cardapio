@@ -7,17 +7,20 @@ const theme = {
 
   font: {
     size: {
-      small: '.8rem',
+      small: '.9rem',
       regular: '1.3rem',
       medium: '1.8rem',
       big: '2.3rem'
     },
     weight: {
+      small: 300,
       regular: 400,
       medium: 500,
       big: 600,
     }
   },
+
+  rounded: '100%',
 
   field: {
     height: '3em',

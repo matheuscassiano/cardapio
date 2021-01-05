@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styled from 'styled-components'
 
 const Button = styled.button`
@@ -16,10 +15,9 @@ const Button = styled.button`
   color: ${props => props.textColor};
   background: ${props => props.bgColor};
   box-shadow: 0px 0px 3.5px ${props => `${props.bgColor}80`};
-`
-const ButtonImage = styled(Image)`
-  margin: 0 1em;
-  object-fit: contain;
-`
 
-export { Button, ButtonImage }
+  span {
+    margin-left: 1em
+  }
+`
+export { Button }
