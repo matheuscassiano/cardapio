@@ -20,6 +20,8 @@ const theme = {
     }
   },
 
+  rounded: '100%',
+
   field: {
     height: '3em',
     width: '100%',
