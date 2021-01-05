@@ -13,7 +13,6 @@ import 'swiper/swiper-bundle.css';
 import { Container } from '../styles/Container'
 import { Wrapper, Slider, Picture } from '../styles/homeStyle'
 
-// import Image from 'next/image'
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const Home: React.FC<AppProps> = () => {
@@ -38,21 +37,24 @@ const Home: React.FC<AppProps> = () => {
         <InputFild name="Indicador" placeholder="Email ou Telefone" />
         <SubmitButton text="Entrar" />
         <Wrapper>ou</Wrapper>
-        <SocialButton 
+        <SocialButton
+        size="25"
         bgColor='#3D5A99'
         textColor='#FFFFFF'
-        text="Continuar com Facebook" 
-        logo="https://cdn.iconscout.com/icon/free/png-256/facebook-1865900-1581916.png" />
-        <SocialButton 
-        textColor='#000000' 
+        text="Continuar com Facebook"
+        logo="/facebook.png" />
+        <SocialButton
+        size="25"
+        textColor='#000000'
         bgColor='#FFFFFF'
         text="Continuar com Google"
-        logo="https://cdn.iconscout.com/icon/free/png-256/google-231-432517.png" />
-        <SocialButton 
+        logo="/google.png" />
+        <SocialButton
+        size="25"
         bgColor='#000000'
         textColor='#FFFFFF'
         text="Continuar com Apple"
-        logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXDzlgYsOMUxG8ejMtf11DfUObotAU7h-UvA&usqp=CAU" />
+        logo="/apple.png" />
       </Container>
     </>
   )

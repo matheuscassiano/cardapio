@@ -1,11 +1,11 @@
-import Button from './styles';
+import { Button, ButtonImage } from './styles';
 import { AppProps } from "next/dist/next-server/lib/router/router"
 
 const SocialButton: React.FC<any> = (props) => {
   return (
-    <Button 
+    <Button
       bgColor={props.bgColor} textColor={props.textColor} type="submit">
-      <img src={props.logo} alt=""/>
+      <ButtonImage width={props.size} height={props.size} src={props.logo} alt=""/>
       <span>{props.text}</span>
     </Button>
   )
