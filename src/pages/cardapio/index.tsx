@@ -1,7 +1,7 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router'
 import Image from 'next/image'
 
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
 import { SwiperSlide } from 'swiper/react'
 import 'swiper/components/pagination/pagination.min.css';
 import 'swiper/swiper.min.css';
@@ -11,11 +11,13 @@ import { Background, Header, SliderMenu, SliderBanner,SliderPromotion } from './
 import InputFild from '../../components/InputFild'
 
 import MenuList from '../../patterns/MenuList'
-import MenuListItem from '../../patterns/MenuListItem';
+import MenuListItem from '../../patterns/MenuListItem'
+import { useState } from 'react';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const Menu: React.FC<AppProps> = () => {
+  const [modalActive, setModalActive] = useState(false)
   return (
       <Background>
         <Header>
@@ -56,8 +58,8 @@ const Menu: React.FC<AppProps> = () => {
             </SwiperSlide>
           </SliderMenu>
         </Header>
-        <SliderBanner slidesPerView={1.3} spaceBetween={20}>
-          <SwiperSlide>
+        <SliderBanner slidesPerView={1.3} spaceBetween={10}>
+          <SwiperSlide onClick={() => setModalActive(true)}>
             <Image src="/banner.png" width="auto" height="130" />
           </SwiperSlide>
           <SwiperSlide>
@@ -90,17 +92,17 @@ const Menu: React.FC<AppProps> = () => {
         <SubTitle>Cervejas</SubTitle>
         <MenuList>
           <MenuListItem>
-            <Image src="/google.png" width="40" height="40" />
+            <Image src="/ellipse.png" width="45" height="45" />
             <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
             <strong>R$ 9.00</strong>
           </MenuListItem>
           <MenuListItem>
-            <Image src="/google.png" width="40" height="40" />
+            <Image src="/ellipse.png" width="45" height="45" />
             <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
             <strong>R$ 9.00</strong>
           </MenuListItem>
           <MenuListItem>
-            <Image src="/google.png" width="40" height="40" />
+            <Image src="/ellipse.png" width="45" height="45" />
             <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
             <strong>R$ 9.00</strong>
           </MenuListItem>
@@ -108,17 +110,17 @@ const Menu: React.FC<AppProps> = () => {
         <SubTitle>Caldos</SubTitle>
         <MenuList>
           <MenuListItem>
-            <Image src="/google.png" width="40" height="40" />
+            <Image src="/ellipse.png" width="45" height="45" />
             <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
             <strong>R$ 9.00</strong>
           </MenuListItem>
           <MenuListItem>
-            <Image src="/google.png" width="40" height="40" />
+            <Image src="/ellipse.png" width="45" height="45" />
             <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
             <strong>R$ 9.00</strong>
           </MenuListItem>
           <MenuListItem>
-            <Image src="/google.png" width="40" height="40" />
+            <Image src="/ellipse.png" width="45" height="45" />
             <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
             <strong>R$ 9.00</strong>
           </MenuListItem>
