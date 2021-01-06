@@ -7,7 +7,7 @@ import 'swiper/components/pagination/pagination.min.css';
 import 'swiper/swiper.min.css';
 
 import { Title, SubTitle, LineBreak } from '../../styles/global'
-import { Background, Header, SliderMenu, SliderBanner } from './styles'
+import { Background, Header, SliderMenu, SliderBanner,SliderPromotion } from './styles'
 import InputFild from '../../components/InputFild'
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
@@ -66,17 +66,20 @@ const Menu: React.FC<AppProps> = () => {
         </SliderBanner>
         <LineBreak />
         <SubTitle>Promoções</SubTitle>
-        <SliderBanner slidesPerView={1.8} spaceBetween={20}>
+        <SliderPromotion slidesPerView={1.8} spaceBetween={20}>
           <SwiperSlide>
             <Image src="/prom.png" width="auto" height="100" />
+            <h6>Picanha na Chapa com Fritas</h6>
           </SwiperSlide>
           <SwiperSlide>
             <Image src="/prom.png" width="auto" height="100" />
+            <h6>Picanha na Chapa com Fritas</h6>
           </SwiperSlide>
           <SwiperSlide>
             <Image src="/prom.png" width="auto" height="100" />
+            <h6>Picanha na Chapa com Fritas</h6>
           </SwiperSlide>
-        </SliderBanner>
+        </SliderPromotion>
         <LineBreak />
       </Background>
     )

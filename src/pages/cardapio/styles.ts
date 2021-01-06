@@ -71,9 +71,27 @@ const SliderBanner = styled(Swiper)`
   }
 `;
 
+const SliderPromotion = styled(Swiper)`
+  padding-left: 0;
+  margin: ${props => props.theme.field.gap.medium};
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+    border-radius: ${props => props.theme.radius.regular};
+  }
+
+  .swiper-slide:first-child {
+    margin-left: 1em;
+  }
+`;
+
 export {
   Background,
   Header,
   SliderMenu,
-  SliderBanner
+  SliderBanner,
+  SliderPromotion
 }
