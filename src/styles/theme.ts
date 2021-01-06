@@ -1,8 +1,9 @@
 const theme = {
   color: {
+    primary: '#08AF24',
+    secoundary: '#608F5F',
     background: 'white',
-    text: 'black',
-    primary: '#8257E6'
+    blue: '#2E65C6',
   },
 
   font: {
@@ -23,6 +24,7 @@ const theme = {
   radius: {
     regular: '8px',
     medium: '15px',
+    big: '25px',
     full: '100%',
   },
 
