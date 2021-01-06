@@ -1,8 +1,8 @@
 const theme = {
   color: {
+    primary: '#08AF24',
+    secoundary: '#608F5F',
     background: 'white',
-    text: 'black',
-    primary: '#8257E6'
   },
 
   font: {

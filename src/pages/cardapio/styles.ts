@@ -71,7 +71,7 @@ const SliderBanner = styled(Swiper)`
   }
 `;
 
-const SliderPromotion: any = styled(Swiper)`
+const SliderPromotion = styled(Swiper)`
   padding-left: 0;
   margin: ${props => props.theme.field.gap.medium};
 
@@ -85,11 +85,24 @@ const SliderPromotion: any = styled(Swiper)`
   .swiper-slide:first-child {
     margin-left: 1em;
   }
-`;
 
-SliderPromotion.Name = styled.h6`
-  font-size: 12px;
-`
+  h6 {
+    font-size: ${props => props.theme.font.size.small};
+    font-weight: ${props => props.theme.font.weight.medium};
+  }
+
+  p {
+    color: #8BBE8A;
+    font-size: ${props => props.theme.font.size.small};
+  }
+
+  span {
+    color: #A0A0A0;
+    font-style: italic;
+    text-decoration-line: line-through;
+    font-weight: ${props => props.theme.font.weight.small};
+  }
+`;
 
 export {
   Background,

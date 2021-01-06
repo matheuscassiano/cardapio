@@ -10,6 +10,9 @@ import { Title, SubTitle, LineBreak } from '../../styles/global'
 import { Background, Header, SliderMenu, SliderBanner,SliderPromotion } from './styles'
 import InputFild from '../../components/InputFild'
 
+import MenuList from '../../patterns/MenuList'
+import MenuListItem from '../../patterns/MenuListItem';
+
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const Menu: React.FC<AppProps> = () => {
@@ -70,17 +73,56 @@ const Menu: React.FC<AppProps> = () => {
           <SwiperSlide>
             <Image src="/prom.png" width="auto" height="100" />
             <h6>Picanha na Chapa com Fritas</h6>
+            <p>R$ 50.00 <span>R$ 66.00</span></p>
           </SwiperSlide>
           <SwiperSlide>
             <Image src="/prom.png" width="auto" height="100" />
             <h6>Picanha na Chapa com Fritas</h6>
+            <p>R$ 50.00 <span>R$ 66.00</span></p>
           </SwiperSlide>
           <SwiperSlide>
             <Image src="/prom.png" width="auto" height="100" />
             <h6>Picanha na Chapa com Fritas</h6>
+            <p>R$ 50.00 <span>R$ 66.00</span></p>
           </SwiperSlide>
         </SliderPromotion>
         <LineBreak />
+        <SubTitle>Cervejas</SubTitle>
+        <MenuList>
+          <MenuListItem>
+            <Image src="/google.png" width="50" height="50" />
+            <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
+            <strong>R$ 9.00</strong>
+          </MenuListItem>
+          <MenuListItem>
+            <Image src="/google.png" width="50" height="50" />
+            <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
+            <strong>R$ 9.00</strong>
+          </MenuListItem>
+          <MenuListItem>
+            <Image src="/google.png" width="50" height="50" />
+            <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
+            <strong>R$ 9.00</strong>
+          </MenuListItem>
+        </MenuList>
+        <SubTitle>Caldos</SubTitle>
+        <MenuList>
+          <MenuListItem>
+            <Image src="/google.png" width="50" height="50" />
+            <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
+            <strong>R$ 9.00</strong>
+          </MenuListItem>
+          <MenuListItem>
+            <Image src="/google.png" width="50" height="50" />
+            <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
+            <strong>R$ 9.00</strong>
+          </MenuListItem>
+          <MenuListItem>
+            <Image src="/google.png" width="50" height="50" />
+            <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
+            <strong>R$ 9.00</strong>
+          </MenuListItem>
+        </MenuList>
       </Background>
     )
 }
