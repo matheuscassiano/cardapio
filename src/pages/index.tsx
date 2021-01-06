@@ -33,15 +33,15 @@ const Home: React.FC<AppProps> = () => {
         </SwiperSlide>
       </Slider>
       <Container>
-        <InputFild name="Nome" placeholder="Nome" />
-        <InputFild name="Indicador" placeholder="Email ou Telefone" />
+        <InputFild placeholder="Nome" />
+        <InputFild placeholder="Email ou Telefone" />
         <SubmitButton text="Entrar" />
         <Wrapper>ou</Wrapper>
         <SocialButton
         size="25"
-        bgColor='#3D5A99'
-        textColor='#FFFFFF'
         text="Continuar com Facebook"
+        textColor='#FFFFFF'
+        bgColor='#3D5A99'
         logo="/facebook.png" />
         <SocialButton
         size="25"

@@ -1,6 +1,10 @@
 import styled from 'styled-components'
+interface SocialButton {
+  bgColor: any;
+  textColor: any;
+}
 
-const Button = styled.button`
+const Button = styled.button<SocialButton>`
   width: ${props => props.theme.field.width};
   height: ${props => props.theme.field.height};
   display: flex;
@@ -11,10 +15,10 @@ const Button = styled.button`
   font-size: ${props => props.theme.font.size.small};
   font-weight: ${props => props.theme.font.weight.small};
   border-radius: ${props => props.theme.radius.medium};
-  border: ${props => props.bgColor == "#FFFFFF" ? '1px solid black' : '0'};
-  color: ${props => props.textColor};
-  background: ${props => props.bgColor};
-  box-shadow: 0px 0px 3.5px ${props => `${props.bgColor}80`};
+  border: ${({ bgColor }) => bgColor == "#FFFFFF" ? '1px solid black' : '0'};
+  color: ${({ textColor }) => textColor};
+  background: ${({ bgColor }) => bgColor};
+  box-shadow: 0px 0px 3.5px ${({ bgColor }) => `${bgColor}80`};
 
   span {
     margin-left: 1em
