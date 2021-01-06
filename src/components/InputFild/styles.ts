@@ -7,7 +7,7 @@ const Input = styled.input`
   margin: ${props => props.theme.field.gap.small};
   font-size: ${props => props.theme.font.size.small};
   font-weight: ${props => props.theme.font.weight.small};
-  border-radius: ${props => props.theme.field.radius};
+  border-radius: ${props => props.theme.radius.medium};
   background-color: white;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 

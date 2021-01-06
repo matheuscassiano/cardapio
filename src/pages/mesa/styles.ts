@@ -6,22 +6,6 @@ const Background = styled.main`
   background-color: #2E65C6;
 `
 
-const Title = styled.h1`
-  color: white;
-  text-align: center;
-  padding: ${props => props.theme.field.gap.big};
-  padding-bottom: 0;
-  font-size: ${props => props.theme.font.size.regular};
-  font-weight: ${props => props.theme.font.weight.regular};
-`
-
-const Subtitle = styled.h2`
-  width: ${props => props.theme.field.width};
-  padding-bottom: 1.5em;
-  font-size: ${props => props.theme.font.size.regular};
-  font-weight: ${props => props.theme.font.weight.medium};
-`
-
 const Info = styled.p`
   text-align: center;
   width: ${props => props.theme.field.width};
@@ -40,8 +24,6 @@ const Button = styled.button`
 
 export {
   Background,
-  Title,
-  Subtitle,
   Info,
   Button
 }

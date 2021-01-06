@@ -7,7 +7,7 @@ const Button = styled.button`
   margin: ${props => props.theme.field.gap.small};
   font-size: ${props => props.theme.font.size.small};
   font-weight: ${props => props.theme.font.small};
-  border-radius: ${props => props.theme.field.radius};
+  border-radius: ${props => props.theme.radius.medium};
   background: #8BBE8A;
   box-shadow: 0px 0px 5px rgba(139, 190, 138, 0.25);
 `
