@@ -56,8 +56,7 @@ export const SubTitle = styled.h2`
 `
 
 export const LineBreak = styled.hr`
-  /* color: #D0D5DA;
   width: 100%;
-  height: 100vh;
-  padding: 0 1.3em; */
+  height: .5px;
+  background-color: #D0D5DA80;
 `

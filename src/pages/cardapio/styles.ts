@@ -11,12 +11,21 @@ const Background = styled.main`
     margin-left: 1em;
     padding-bottom: 0;
   }
+
+  input {
+    width: calc(100% - 4em);
+    margin-left: 2em;
+  }
+
+  hr {
+    width: calc(100% - 2em);
+    margin: 0 1em 1em;
+  }
 `
 
 const Header = styled.div`
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 15px 15px;
-}
 `
 
 const SliderMenu = styled(Swiper)`
