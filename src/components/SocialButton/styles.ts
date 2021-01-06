@@ -10,7 +10,7 @@ const Button = styled.button`
   text-align: left;
   font-size: ${props => props.theme.font.size.small};
   font-weight: ${props => props.theme.font.weight.small};
-  border-radius: ${props => props.theme.field.radius};
+  border-radius: ${props => props.theme.radius.medium};
   border: ${props => props.bgColor == "#FFFFFF" ? '1px solid black' : '0'};
   color: ${props => props.textColor};
   background: ${props => props.bgColor};

@@ -10,7 +10,7 @@ import { SwiperSlide } from 'swiper/react';
 import 'swiper/components/pagination/pagination.min.css';
 import 'swiper/swiper-bundle.css';
 
-import { Container } from '../styles/Container'
+import { Container } from '../styles/global'
 import { Wrapper, Slider } from '../styles/homeStyle'
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);

@@ -1,47 +1,70 @@
 import styled from 'styled-components'
+import { Swiper } from 'swiper/react'
 
 const Background = styled.main`
   width: 100%;
   height: 100vh;
   background-color: #FFFFFF;
+
+  h2 {
+    width: calc(100% - 1em);
+    margin-left: 1em;
+    padding-bottom: 0;
+  }
 `
 
-const Title = styled.h1`
-  color: white;
-  text-align: center;
-  padding: ${props => props.theme.field.gap.big};
-  padding-bottom: 0;
-  font-size: ${props => props.theme.font.size.regular};
-  font-weight: ${props => props.theme.font.weight.regular};
+const Header = styled.div`
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 15px 15px;
+}
 `
 
-const Subtitle = styled.h2`
-  width: ${props => props.theme.field.width};
-  padding-bottom: 1.5em;
-  font-size: ${props => props.theme.font.size.regular};
-  font-weight: ${props => props.theme.font.weight.medium};
-`
+const SliderMenu = styled(Swiper)`
+  padding: ${props => props.theme.field.gap.medium};
 
-const Info = styled.p`
-  text-align: center;
-  width: ${props => props.theme.field.width};
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 10;
+  }
+
+  .swiper-slide:first-child {
+    margin-left: 1em;
+  }
+
+  img {
+    margin: .5em 0;
+    object-fit: contain;
+  }
+`;
+
+const SliderBanner = styled(Swiper)`
+  padding-left: 0;
   margin: ${props => props.theme.field.gap.medium};
-  font-size: ${props => props.theme.font.size.regular};
-  font-weight: ${props => props.theme.font.weight.small};
-`
 
-const Button = styled.button`
-  width: 6em;
-  height: 6em;
-  border-radius: ${props => props.theme.rounded};
-  background-color: #2E65C6;
-  box-shadow: 0px 0px 10px rgba(39, 90, 181, 0.5);
-`
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: ${props => props.theme.radius.regular};
+  }
+
+  .swiper-slide:first-child {
+    margin-left: 1em;
+  }
+
+  .swiper-slide {
+    display: flex;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+    border-radius: ${props => props.theme.radius.medium};
+  }
+`;
 
 export {
   Background,
-  Title,
-  Subtitle,
-  Info,
-  Button
+  Header,
+  SliderMenu,
+  SliderBanner
 }

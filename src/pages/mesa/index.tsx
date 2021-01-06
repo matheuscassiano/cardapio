@@ -1,6 +1,6 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router'
-import { Container } from '../../styles/Container'
-import { Background, Title, Subtitle, Info, Button } from './styles'
+import { Container, SubTitle, Title } from '../../styles/global'
+import { Background, Info, Button } from './styles'
 import InputFild from '../../components/InputFild'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
@@ -20,11 +20,11 @@ const Table: React.FC<AppProps> = () => {
 
   return (
       <Background>
-        <Title>Verificação de mesa</Title>
+        <Title color="white">Verificação de mesa</Title>
         <Image src="/table.svg" alt="table" width={windowSize.width} height={windowSize.width * .7} />
         <Container>
           <div>
-            <Subtitle>Preencha as Informações</Subtitle>
+            <SubTitle>Preencha as Informações</SubTitle>
             <InputFild as="select">
               <option disabled selected>Selecione sua mesa</option>
               <option value="1">Mesa 01</option>
