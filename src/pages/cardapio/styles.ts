@@ -48,7 +48,7 @@ const SliderMenu = styled(Swiper)`
     margin: .5em 0;
     object-fit: contain;
   }
-`;
+`
 
 const SliderBanner = styled(Swiper)`
   padding-left: 0;
@@ -71,7 +71,7 @@ const SliderBanner = styled(Swiper)`
     /* box-shadow: 0px 0px 5px rgba(0, 0, 0, .5); */
     border-radius: ${props => props.theme.radius.medium};
   }
-`;
+`
 
 const SliderPromotion = styled(Swiper)`
   padding-left: 0;
@@ -104,12 +104,41 @@ const SliderPromotion = styled(Swiper)`
     text-decoration-line: line-through;
     font-weight: ${props => props.theme.font.weight.small};
   }
-`;
+`
+
+const Footer = styled.footer`
+  width: 100%;
+  height: 4em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: fixed;
+  bottom: 0;
+  background-color: ${props => props.theme.color.primary};
+
+  a, span {
+    align-self: center;
+    justify-self: center;
+  }
+
+  a {
+    padding: .5em 1em;
+    border-radius: 1.5em;
+    color: ${props => props.theme.color.primary};
+    font-size: ${props => props.theme.font.size.small};
+    font-weight: ${props => props.theme.font.weight.medium};
+    background-color: ${props => props.theme.color.background};
+  }
+
+  span {
+    color: white;
+  }
+`
 
 export {
   Background,
   Header,
   SliderMenu,
   SliderBanner,
-  SliderPromotion
+  SliderPromotion,
+  Footer
 }

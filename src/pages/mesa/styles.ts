@@ -18,8 +18,8 @@ const Button = styled.button`
   width: 6em;
   height: 6em;
   border-radius: ${props => props.theme.radius.full};
-  background-color: #2E65C6;
-  box-shadow: 0px 0px 10px rgba(39, 90, 181, 0.5);
+  background-color: ${props => props.theme.color.blue};
+  box-shadow: 0px 0px 10px ${props => props.theme.color.blue}f0;
 `
 
 export {
