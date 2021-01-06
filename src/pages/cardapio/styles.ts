@@ -3,8 +3,9 @@ import { Swiper } from 'swiper/react'
 
 const Background = styled.main`
   width: 100%;
-  height: 100vh;
-  background-color: #FFFFFF;
+  min-height: 100vh;
+  padding-bottom: 3em;
+  background-color: ${props => props.theme.color.background};
 
   h2 {
     width: calc(100% - 1em);

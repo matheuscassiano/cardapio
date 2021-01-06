@@ -25,7 +25,7 @@ export const Container = styled.form`
   justify-content: center;
   flex-direction: column;
   padding: 2.5em;
-  background: #FFFFFF;
+  background-color: ${props => props.theme.color.background};
   box-shadow: 0px -5px 100px 5px rgba(0, 0, 0, 0.25);
   border-radius: 50px 50px 0px 0px;
   position: fixed;
