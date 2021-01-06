@@ -7,7 +7,7 @@ import 'swiper/components/pagination/pagination.min.css';
 import 'swiper/swiper.min.css';
 
 import { Title, SubTitle, LineBreak } from '../../styles/global'
-import { Background, Header, SliderMenu, SliderBanner,SliderPromotion, Footer } from './styles'
+import { Background, Header, SliderMenu, SliderBanner,SliderPromotion, Footer, Modal } from './styles'
 import InputFild from '../../components/InputFild'
 
 import MenuList from '../../patterns/MenuList'
@@ -130,6 +130,9 @@ const Menu: React.FC<AppProps> = () => {
           <a>Ver bandeija</a>
           <span>R$ 9.00</span>
         </Footer>
+        <Modal>
+
+        </Modal>
       </Background>
     )
 }
