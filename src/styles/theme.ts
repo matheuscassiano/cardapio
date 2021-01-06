@@ -23,6 +23,7 @@ const theme = {
   radius: {
     regular: '8px',
     medium: '15px',
+    big: '25px',
     full: '100%',
   },
 

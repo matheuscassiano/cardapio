@@ -1,15 +1,24 @@
 import { Button } from './styles';
-import { AppProps } from "next/dist/next-server/lib/router/router"
+import { App} from "next/dist/next-server/lib/router/router"
 import Image from 'next/image';
 
-const SocialButton: React.FC<any> = (props) => {
-  return (
-    <Button
-      bgColor={props.bgColor} textColor={props.textColor} type="submit">
-      <Image width={props.size} height={props.size} src={props.logo} alt=""/>
-      <span>{props.text}</span>
-    </Button>
-  )
+interface SocialButton {
+  bgColor: any;
+  textColor: String;
 }
+
+interface SocialButtonChildren {
+  size: Number;
+  logo: String;
+  text: String;
+}
+
+const SocialButton: React.FC<SocialButton> & React.FC<SocialButtonChildren> = ({bgColor, textColor, size, logo, text}) => (
+  <Button
+    bgColor={bgColor} textColor={textColor} type="submit">
+    <Image width={size} height={size} src={logo} alt={text} />
+    <span>{text}</span>
+  </Button>
+)
 
 export default SocialButton

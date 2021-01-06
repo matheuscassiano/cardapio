@@ -1,6 +1,11 @@
 import Input from './styles';
 
-const InputFild: React.FC<any> = props => {
+interface FieldProps {
+  as: any,
+  placeholder: String
+}
+
+const InputFild: React.FC<FieldProps> = props => {
   return <Input as={props.as} placeholder={props.placeholder} >{props.children}</Input>
 }
 

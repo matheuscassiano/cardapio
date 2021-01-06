@@ -71,7 +71,7 @@ const SliderBanner = styled(Swiper)`
   }
 `;
 
-const SliderPromotion = styled(Swiper)`
+const SliderPromotion: any = styled(Swiper)`
   padding-left: 0;
   margin: ${props => props.theme.field.gap.medium};
 
@@ -79,14 +79,17 @@ const SliderPromotion = styled(Swiper)`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
-    border-radius: ${props => props.theme.radius.regular};
+    border-radius: ${props => props.theme.radius.medium};
   }
 
   .swiper-slide:first-child {
     margin-left: 1em;
   }
 `;
+
+SliderPromotion.Name = styled.h6`
+  font-size: 12px;
+`
 
 export {
   Background,
