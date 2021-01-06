@@ -1,8 +1,8 @@
 import Input from './styles';
 
 interface FieldProps {
-  as: any,
-  placeholder: String
+  as: any;
+  placeholder: String;
 }
 
 const InputFild: React.FC<FieldProps> = props => {

@@ -1,6 +1,10 @@
 import styled from 'styled-components'
+interface SocialButton {
+  bgColor: any;
+  textColor: any;
+}
 
-const Button = styled.button`
+const Button = styled.button<SocialButton>`
   width: ${props => props.theme.field.width};
   height: ${props => props.theme.field.height};
   display: flex;
