@@ -10,18 +10,14 @@ const Button = styled.button`
   text-align: left;
   font-size: ${props => props.theme.font.size.small};
   font-weight: ${props => props.theme.font.weight.small};
-  border-radius: ${props => props.theme.field.radius};
+  border-radius: ${props => props.theme.radius.medium};
   border: ${props => props.bgColor == "#FFFFFF" ? '1px solid black' : '0'};
   color: ${props => props.textColor};
   background: ${props => props.bgColor};
   box-shadow: 0px 0px 3.5px ${props => `${props.bgColor}80`};
 
-  img {
-    width: 2em;
-    height: 2em;
-    margin: 0 1em;
-    object-fit: contain;
+  span {
+    margin-left: 1em
   }
 `
-
-export default Button
+export { Button }
