@@ -90,17 +90,17 @@ const Menu: React.FC<AppProps> = () => {
         <SubTitle>Cervejas</SubTitle>
         <MenuList>
           <MenuListItem>
-            <Image src="/google.png" width="50" height="50" />
+            <Image src="/google.png" width="40" height="40" />
             <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
             <strong>R$ 9.00</strong>
           </MenuListItem>
           <MenuListItem>
-            <Image src="/google.png" width="50" height="50" />
+            <Image src="/google.png" width="40" height="40" />
             <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
             <strong>R$ 9.00</strong>
           </MenuListItem>
           <MenuListItem>
-            <Image src="/google.png" width="50" height="50" />
+            <Image src="/google.png" width="40" height="40" />
             <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
             <strong>R$ 9.00</strong>
           </MenuListItem>
@@ -108,17 +108,17 @@ const Menu: React.FC<AppProps> = () => {
         <SubTitle>Caldos</SubTitle>
         <MenuList>
           <MenuListItem>
-            <Image src="/google.png" width="50" height="50" />
+            <Image src="/google.png" width="40" height="40" />
             <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
             <strong>R$ 9.00</strong>
           </MenuListItem>
           <MenuListItem>
-            <Image src="/google.png" width="50" height="50" />
+            <Image src="/google.png" width="40" height="40" />
             <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
             <strong>R$ 9.00</strong>
           </MenuListItem>
           <MenuListItem>
-            <Image src="/google.png" width="50" height="50" />
+            <Image src="/google.png" width="40" height="40" />
             <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
             <strong>R$ 9.00</strong>
           </MenuListItem>
