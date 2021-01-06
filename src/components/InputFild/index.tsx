@@ -1,7 +1,7 @@
 import Input from './styles';
 
 interface FieldProps {
-  as: any;
+  as?: any;
   placeholder: String;
 }
 

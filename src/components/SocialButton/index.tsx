@@ -1,18 +1,16 @@
 import { Button } from './styles';
 import Image from 'next/image';
+import React from 'react';
 
 interface SocialButton {
-  bgColor: any;
-  textColor: any;
+  bgColor: string;
+  textColor: string;
+  size: any;
+  logo: string;
+  text: string;
 }
 
-interface SocialButtonChildren {
-  size: Number;
-  logo: TexImageSource;
-  text: String;
-}
-
-const SocialButton: React.FC<SocialButton> & React.FC<SocialButtonChildren> = ({bgColor, textColor, size, logo, text}) => (
+const SocialButton: React.FC<SocialButton> = ({bgColor, textColor, size, logo, text}) => (
   <Button bgColor={bgColor} textColor={textColor} type="submit">
     <Image width={size} height={size} src={logo} alt={text} />
     <span>{text}</span>
