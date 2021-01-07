@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import Footer from '../../components/Footer';
+import { Price, SubPrice } from '../../styles/global';
 import MenuList from '../MenuList';
 import MenuListItem from '../MenuListItem';
-import { ModalContainer, ModalContent, ModalClose, ModalImage, ModalInfo, Name, Detail, ModalSelectItems } from './styles';
+import { ModalContainer, ModalContent, ModalClose, ModalImage, ModalInfo, Name, Detail, ModalSelectedItems, ModalSelectItems } from './styles';
 
 interface Modal {
   active: Boolean;
@@ -21,33 +22,40 @@ const Modal: React.FC<Modal> = ({ active, setActive }) => (
       <ModalInfo>
         <Name>Picanha na Chapa com Fritas</Name>
         <Detail>Medalhão de picanha feiro na  chapa com manteiga de garrafa</Detail>
-        <span>A partir de R$ 70.00 R$ 88.00</span>
+        <p>A partir de <Price>R$ 70.00</Price> <SubPrice>R$ 88.00</SubPrice></p>
       </ModalInfo>
+      <ModalSelectedItems>
+        <div>
+          <p>Escolha o tamanho</p>
+          <p>0 de 1</p>
+        </div>
+        <span>Obrigatório</span>
+      </ModalSelectedItems>
       <ModalSelectItems>
         <MenuList>
           <MenuListItem>
             <Image src="/ellipse.png" width="45" height="45" />
             <p>Para 3 pessoas <br/>
             <span>Carne 1kg</span></p>
-            <strong>R$ 9.00 </strong>
+            <Price>R$ 9.00</Price>
           </MenuListItem>
           <MenuListItem>
             <Image src="/ellipse.png" width="45" height="45" />
             <p>Para 3 pessoas <br/>
             <span>Carne 1kg</span></p>
-            <strong>R$ 9.00 </strong>
+            <Price>R$ 9.00</Price>
           </MenuListItem>
           <MenuListItem>
             <Image src="/ellipse.png" width="45" height="45" />
             <p>Para 3 pessoas <br/>
             <span>Carne 1kg</span></p>
-            <strong>R$ 9.00 </strong>
+            <Price>R$ 9.00</Price>
           </MenuListItem>
           <MenuListItem>
             <Image src="/ellipse.png" width="45" height="45" />
             <p>Para 3 pessoas <br/>
             <span>Carne 1kg</span></p>
-            <strong>R$ 9.00 </strong>
+            <Price>R$ 9.00</Price>
           </MenuListItem>
         </MenuList>
       </ModalSelectItems>

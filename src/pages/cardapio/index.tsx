@@ -6,7 +6,7 @@ import { SwiperSlide } from 'swiper/react'
 import 'swiper/components/pagination/pagination.min.css';
 import 'swiper/swiper.min.css';
 
-import { Title, SubTitle, LineBreak } from '../../styles/global'
+import { Title, SubTitle, LineBreak, Price, SubPrice } from '../../styles/global'
 import { Background, Header, SliderMenu, SliderBanner, SliderPromotion } from './styles'
 import InputFild from '../../components/InputFild'
 import Footer from '../../components/Footer';
@@ -77,17 +77,17 @@ const Menu: React.FC<AppProps> = () => {
           <SwiperSlide>
             <Image src="/prom.png" width="auto" height="100" />
             <h6>Picanha na Chapa com Fritas</h6>
-            <p>R$ 50.00 <span>R$ 66.00</span></p>
+            <p><Price>R$ 50.00</Price> <SubPrice>R$ 66.00</SubPrice></p>
           </SwiperSlide>
           <SwiperSlide>
             <Image src="/prom.png" width="auto" height="100" />
             <h6>Picanha na Chapa com Fritas</h6>
-            <p>R$ 50.00 <span>R$ 66.00</span></p>
+            <p><Price>R$ 50.00</Price> <SubPrice>R$ 66.00</SubPrice></p>
           </SwiperSlide>
           <SwiperSlide>
             <Image src="/prom.png" width="auto" height="100" />
             <h6>Picanha na Chapa com Fritas</h6>
-            <p>R$ 50.00 <span>R$ 66.00</span></p>
+            <p><Price>R$ 50.00</Price> <SubPrice>R$ 66.00</SubPrice></p>
           </SwiperSlide>
         </SliderPromotion>
         <LineBreak />
@@ -96,17 +96,17 @@ const Menu: React.FC<AppProps> = () => {
           <MenuListItem>
             <Image src="/ellipse.png" width="45" height="45" />
             <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
-            <strong>R$ 9.00</strong>
+            <Price>R$ 9.00</Price>
           </MenuListItem>
           <MenuListItem>
             <Image src="/ellipse.png" width="45" height="45" />
             <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
-            <strong>R$ 9.00</strong>
+            <Price>R$ 9.00</Price>
           </MenuListItem>
           <MenuListItem>
             <Image src="/ellipse.png" width="45" height="45" />
             <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
-            <strong>R$ 9.00</strong>
+            <Price>R$ 9.00</Price>
           </MenuListItem>
         </MenuList>
         <SubTitle>Caldos</SubTitle>
@@ -114,17 +114,17 @@ const Menu: React.FC<AppProps> = () => {
           <MenuListItem>
             <Image src="/ellipse.png" width="45" height="45" />
             <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
-            <strong>R$ 9.00</strong>
+            <Price>R$ 9.00</Price>
           </MenuListItem>
           <MenuListItem>
             <Image src="/ellipse.png" width="45" height="45" />
             <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
-            <strong>R$ 9.00</strong>
+            <Price>R$ 9.00</Price>
           </MenuListItem>
           <MenuListItem>
             <Image src="/ellipse.png" width="45" height="45" />
             <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
-            <strong>R$ 9.00</strong>
+            <Price>R$ 9.00</Price>
           </MenuListItem>
         </MenuList>
         <Footer>

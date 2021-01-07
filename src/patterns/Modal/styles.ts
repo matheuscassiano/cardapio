@@ -79,9 +79,29 @@ const Detail = styled.p`
   font-weight: ${props => props.theme.font.weight.small};
 `
 
+const ModalSelectedItems = styled.div`
+  height: 3.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  color: #5E5E5E;
+  background-color: #CFD3D8;
+  font-size: ${props => props.theme.font.size.small};
+
+  span {
+    padding: .3em .5em;
+    color: white;
+    border-radius: 1em;
+    background-color: #363636;
+    font-size: ${props => props.theme.font.size.small};
+    font-weight: ${props => props.theme.font.weight.medium};
+  }
+`
+
 const ModalSelectItems = styled.div`
-  min-height: 10em;
-  max-height: 30vh;
+  min-height: 8em;
+  max-height: 25vh;
   padding-bottom: 3em;
   overflow: auto;
 `
@@ -94,5 +114,6 @@ export {
   ModalInfo,
   Name,
   Detail,
+  ModalSelectedItems,
   ModalSelectItems
 }

@@ -93,15 +93,8 @@ const SliderPromotion = styled(Swiper)`
     font-weight: ${props => props.theme.font.weight.medium};
   }
 
-  p {
-    color: #8BBE8A;
+  p span, p strong {
     font-size: ${props => props.theme.font.size.small};
-  }
-
-  span {
-    color: #A0A0A0;
-    font-style: italic;
-    text-decoration-line: line-through;
     font-weight: ${props => props.theme.font.weight.small};
   }
 `
