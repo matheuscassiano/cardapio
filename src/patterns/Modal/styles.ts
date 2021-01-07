@@ -48,7 +48,7 @@ const ModalClose = styled.div`
   top: 1em;
   left: 1em;
   border-radius: ${props => props.theme.radius.full};
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255, .7);
   z-index: 2;
 `
 
