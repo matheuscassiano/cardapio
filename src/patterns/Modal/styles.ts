@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components'
+import { SubTitle } from '../../styles/global';
 
 interface Modal {
   show: Boolean;
@@ -34,7 +35,7 @@ const ModalContent = styled.div`
   left: 0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   border-radius: 50px 50px 0px 0px;
-  animation: ${up} .2s linear forwards;
+  animation: ${up} .2s ease-in-out forwards;
   background-color: ${props => props.theme.color.background};
 `
 
@@ -53,6 +54,7 @@ const ModalClose = styled.div`
 `
 
 const ModalImage = styled.div`
+  height: 25vh;
   div {
     height: 25vh;
 
@@ -62,9 +64,27 @@ const ModalImage = styled.div`
   }
 `
 
+const ModalInfo = styled.div`
+  padding: 1em 1em 3em 1em;
+`
+
+const Name = styled(SubTitle)`
+  margin-left: 0 !important;
+  font-weight: ${props => props.theme.font.weight.regular};
+`
+
+const Detail = styled.p`
+  margin: 1em 0;
+  font-size: ${props => props.theme.font.size.small};
+  font-weight: ${props => props.theme.font.weight.small};
+`
+
 export {
   ModalContainer,
   ModalContent,
   ModalClose,
-  ModalImage
+  ModalImage,
+  ModalInfo,
+  Name,
+  Detail
 }
