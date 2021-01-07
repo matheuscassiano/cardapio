@@ -60,3 +60,19 @@ export const LineBreak = styled.hr`
   height: .5px;
   background-color: #D0D5DA80;
 `
+
+export const Price = styled.strong`
+  align-self: center;
+  justify-self: center;
+  color: ${props => props.theme.color.secoundary};
+  color: ${props => props.color};
+  font-size: ${props => props.theme.font.size.small};
+  font-weight: ${props => props.theme.font.weight.medium};
+`
+
+export const SubPrice = styled.span`
+  color: #A0A0A0;
+  font-style: italic;
+  text-decoration-line: line-through;
+  font-weight: ${props => props.theme.font.weight.small};
+`
