@@ -41,6 +41,9 @@ const ModalContent = styled.div`
 const ModalClose = styled.div`
   width: 2em;
   height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 1em;
   left: 1em;
