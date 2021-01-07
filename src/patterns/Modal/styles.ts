@@ -28,8 +28,8 @@ const ModalContainer = styled.div<Modal>`
 
 const ModalContent = styled.div`
   width: 100%;
-  height: calc(100vh - 15em);
-  overflow-x: auto;
+  /* max-height: calc(100vh - 15em); */
+  overflow: hidden;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -45,7 +45,7 @@ const ModalClose = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   top: 1em;
   left: 1em;
   border-radius: ${props => props.theme.radius.full};
@@ -65,7 +65,7 @@ const ModalImage = styled.div`
 `
 
 const ModalInfo = styled.div`
-  padding: 1em 1em 3em 1em;
+  padding: 1em;
 `
 
 const Name = styled(SubTitle)`
@@ -79,6 +79,13 @@ const Detail = styled.p`
   font-weight: ${props => props.theme.font.weight.small};
 `
 
+const ModalSelectItems = styled.div`
+  min-height: 10em;
+  max-height: 30vh;
+  padding-bottom: 3em;
+  overflow: auto;
+`
+
 export {
   ModalContainer,
   ModalContent,
@@ -86,5 +93,6 @@ export {
   ModalImage,
   ModalInfo,
   Name,
-  Detail
+  Detail,
+  ModalSelectItems
 }

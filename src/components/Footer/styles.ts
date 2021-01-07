@@ -6,6 +6,7 @@ const FooterContainer = styled.footer`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   position: fixed;
+  left: 0;
   bottom: 0;
   background-color: ${props => props.theme.color.primary};
 
