@@ -1,39 +1,47 @@
 import styled from 'styled-components'
 
-const Item = styled.li`
-    padding: 1em 0;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+interface ListItem {
+  items: Number
+}
 
-    :last-child {
-        margin-bottom: 1.5em;
+const Item = styled.li<ListItem>`
+  padding: 1em 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: ${props => {
+    let template = '';
+    for(let i = 1; i <= props.items; i++) {
+      if (i == 2) {
+        template += '2fr '
+      } else {
+        template += '1fr '
+      }
     }
+    return template
+  }};
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
 
-    img {
-        align-self: center;
-        justify-self: center;
-        object-fit: contain;
-    }
+  :last-child {
+    margin-bottom: 1.5em;
+  }
 
-    p {
-        align-self: center;
-        font-size: ${props => props.theme.font.size.small};
-        font-weight: ${props => props.theme.font.weight.big};
-    }
+  * {
+    align-self: center;
+    justify-self: center;
+    object-fit: contain;
+  }
 
-    p span {
-        font-size: ${props => props.theme.font.size.small};
-        font-weight: ${props => props.theme.font.weight.regular};
-    }
+  p {
+    align-self: center;
+    justify-self: flex-start;
+    font-size: ${props => props.theme.font.size.small};
+    font-weight: ${props => props.theme.font.weight.big};
+  }
 
-    strong {
-        align-self: center;
-        justify-self: center;
-        color: ${props => props.theme.color.secoundary};
-        font-size: ${props => props.theme.font.size.small};
-        font-weight: ${props => props.theme.font.weight.medium};
-    }
+  p span {
+    font-size: ${props => props.theme.font.size.small};
+    font-weight: ${props => props.theme.font.weight.regular};
+  }
 `
 
 export default Item
