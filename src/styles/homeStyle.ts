@@ -12,6 +12,10 @@ const Slider = styled(Swiper)`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  img {
+    object-fit: cover
+  }
 `;
 
 export {

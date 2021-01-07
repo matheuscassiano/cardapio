@@ -43,7 +43,7 @@ export const Title = styled.h1`
   text-align: center;
   color: ${props => props.color};
   padding: ${props => props.theme.field.gap.big};
-  padding-bottom: .5em;
+  /* padding-bottom: .5em; */
   font-size: ${props => props.theme.font.size.regular};
   font-weight: ${props => props.theme.font.weight.regular};
 `
@@ -64,7 +64,7 @@ export const LineBreak = styled.hr`
 export const Price = styled.strong`
   align-self: center;
   justify-self: center;
-  color: ${props => props.theme.color.secoundary};
+  color: ${props => props.theme.color.terciary};
   color: ${props => props.color};
   font-size: ${props => props.theme.font.size.small};
   font-weight: ${props => props.theme.font.weight.medium};

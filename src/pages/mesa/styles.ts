@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Background = styled.main`
   width: 100%;
   height: 100vh;
-  background-color: ${props => props.theme.color.blue};
+  background-color: ${props => props.theme.color.secoundary};
 `
 
 const Info = styled.p`
@@ -18,8 +18,8 @@ const Button = styled.button`
   width: 6em;
   height: 6em;
   border-radius: ${props => props.theme.radius.full};
-  background-color: ${props => props.theme.color.blue};
-  box-shadow: 0px 0px 10px ${props => props.theme.color.blue}f0;
+  background-color: ${props => props.theme.color.secoundary};
+  box-shadow: 0px 0px 10px ${props => props.theme.color.secoundary}f0;
 `
 
 export {

@@ -12,6 +12,7 @@ import 'swiper/swiper-bundle.css';
 
 import { Container } from '../styles/global'
 import { Wrapper, Slider } from '../styles/homeStyle'
+import Image from 'next/image'
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -26,16 +27,16 @@ const Home: React.FC<AppProps> = () => {
       autoplay={true}
       pagination={{ clickable: true }} >
         <SwiperSlide>
-          <img src="https://www.recipetineats.com/wp-content/uploads/2019/09/Ramen-3.jpg" alt=""/>
+          <Image src="/food-one.png" alt="one" layout="fill"/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://www.recipetineats.com/wp-content/uploads/2019/09/Ramen_RamenStreet_YM-2.jpg" alt=""/>
+          <Image src="/food-one.png" alt="one" layout="fill"/>
         </SwiperSlide>
       </Slider>
       <Container>
         <InputFild placeholder="Nome" />
         <InputFild placeholder="Email ou Telefone" />
-        <SubmitButton text="Entrar" />
+        <SubmitButton href="/mesa">Entrar</SubmitButton>
         <Wrapper>ou</Wrapper>
         <SocialButton
         size="25"
