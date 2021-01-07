@@ -8,7 +8,7 @@ interface Label {
 const CheckBox: React.FC<Label> = ({ id }) => (
   <>
     <Input id={id} type="checkbox" />
-    <Label for={id} />
+    <Label htmlFor={id} />
   </>
 )
 
