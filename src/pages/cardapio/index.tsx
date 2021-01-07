@@ -130,7 +130,7 @@ const Menu: React.FC<AppProps> = () => {
         <Footer>
           <span></span>
           <a>Ver bandeija</a>
-          <span>R$ 9.00</span>
+          <Price color="white">R$ 9.00</Price>
         </Footer>
         <Modal active={modalActive} setActive={setModalActive} />
       </Background>

@@ -1,7 +1,11 @@
 import Item from './styles';
 
-const MenuListItem: React.FC = ({ children }) => {
-  return <Item>{children}</Item>
+interface ListItem {
+  cols?: Number;
+}
+
+const MenuListItem: React.FC<ListItem> = (props) => {
+  return <Item items={props.cols}>{props.children}</Item>
 }
 
 export default MenuListItem

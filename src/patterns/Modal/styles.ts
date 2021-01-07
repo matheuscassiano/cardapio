@@ -101,7 +101,7 @@ const ModalSelectedItems = styled.div`
 
 const ModalSelectItems = styled.div`
   min-height: 8em;
-  max-height: 25vh;
+  max-height: 28vh;
   padding-bottom: 3em;
   overflow: auto;
 `

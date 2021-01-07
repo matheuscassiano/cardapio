@@ -65,6 +65,7 @@ export const Price = styled.strong`
   align-self: center;
   justify-self: center;
   color: ${props => props.theme.color.secoundary};
+  color: ${props => props.color};
   font-size: ${props => props.theme.font.size.small};
   font-weight: ${props => props.theme.font.weight.medium};
 `

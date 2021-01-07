@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import FooterContainer from './styles';
 
-const Footer: React.FC = ({ children }) => (
-  <FooterContainer >{children}</FooterContainer>
+const Footer: React.FC<ListItem> = ({ children }) => (
+  <FooterContainer>{children}</FooterContainer>
 )
 
 export default Footer
