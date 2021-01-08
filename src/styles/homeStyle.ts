@@ -1,6 +1,11 @@
 import styled from 'styled-components'
 import { Swiper } from 'swiper/react';
 
+const Background = styled.main`
+  display: flex;
+  justify-content: center;  
+`
+
 const Wrapper = styled.span`
   font-size: .8em;
   padding: 1em 0;
@@ -16,9 +21,10 @@ const Slider = styled(Swiper)`
   img {
     object-fit: cover
   }
-`;
+`
 
 export {
+  Background,
   Wrapper,
   Slider
 }
