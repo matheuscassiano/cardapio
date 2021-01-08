@@ -42,6 +42,13 @@ const Item = styled.li<ListItem>`
     font-size: ${props => props.theme.font.size.small};
     font-weight: ${props => props.theme.font.weight.regular};
   }
+
+  @media (min-width: ${props => props.theme.device.tablet1}px) {
+    max-width: 50vw;
+  }
+  @media (min-width: ${props => props.theme.device.tablet2}px) {
+    max-width: 33vw;
+  }
 `
 
 export default Item

@@ -1,4 +1,9 @@
 const theme = {
+  device: {
+    tablet1: 750,
+    tablet2: 900,
+  },
+
   color: {
     primary: '#08AF24',
     secoundary: '#3fbb54',

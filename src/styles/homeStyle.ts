@@ -3,7 +3,8 @@ import { Swiper } from 'swiper/react';
 
 const Background = styled.main`
   display: flex;
-  justify-content: center;  
+  align-items: center;
+  flex-direction: column;
 `
 
 const Wrapper = styled.span`
@@ -13,6 +14,7 @@ const Wrapper = styled.span`
 `
 
 const Slider = styled(Swiper)`
+  width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;

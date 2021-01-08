@@ -8,9 +8,8 @@ const Background = styled.main`
   flex-direction: column;
   background-color: ${props => props.theme.color.secoundary};
 
-  img {
+  div {
     align-self: normal;
-  }
   }
 `
 
