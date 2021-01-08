@@ -5,13 +5,14 @@ interface SocialButton {
 }
 
 const Button = styled.button<SocialButton>`
-  width: ${props => props.theme.field.width};
-  height: ${props => props.theme.field.height};
+  max-width: 30em;
   display: flex;
   align-items: center;
-  margin: ${props => props.theme.field.gap.small};
   padding: 0 2em;
   text-align: left;
+  width: ${props => props.theme.field.width};
+  height: ${props => props.theme.field.height};
+  margin: ${props => props.theme.field.gap.small};
   font-size: ${props => props.theme.font.size.small};
   font-weight: ${props => props.theme.font.weight.small};
   border-radius: ${props => props.theme.radius.medium};

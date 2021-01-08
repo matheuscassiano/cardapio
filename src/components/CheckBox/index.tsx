@@ -2,7 +2,7 @@ import { Label, Input } from './styles';
 
 interface Label {
   id: any;
-  for: any;
+  htmlFor?: any;
 }
 
 const CheckBox: React.FC<Label> = ({ id }) => (

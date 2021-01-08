@@ -4,6 +4,7 @@ import { Background, Info, Button } from './styles'
 import InputFild from '../../components/InputFild'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
 
 const Table: React.FC<AppProps> = () => {
   const [windowSize, setWindowSize] = useState({
@@ -21,7 +22,7 @@ const Table: React.FC<AppProps> = () => {
   return (
       <Background>
         <Title color="white">Verificação de mesa</Title>
-        <Image src="/table.svg" alt="table" width={windowSize.width} height={windowSize.width * .7} />
+        <Image src="/table.svg" alt="table" width={windowSize.width} height={windowSize.width * .4} layout="responsive" />
         <Container>
           <div>
             <SubTitle>Preencha as Informações</SubTitle>
@@ -36,9 +37,11 @@ const Table: React.FC<AppProps> = () => {
             </InputFild>
             <InputFild placeholder="Digite a senha da sua mesa" />
             <Info>Caso não tenha a senha da sua mesa, chame algum garçom e peça a ele a senha</Info>
-            <Button>
-              <Image src="/arrow-right.svg" width="40" height="40" />
-            </Button>
+            <Link href="/cardapio">
+              <Button>
+                <Image src="/arrow-right.svg" width="40" height="40" />
+              </Button>
+            </Link>
           </div>
         </Container>
       </Background>

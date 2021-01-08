@@ -27,16 +27,22 @@ const ModalContainer = styled.div<Modal>`
 `
 
 const ModalContent = styled.div`
+  max-width: 31em;
   width: 100%;
   /* max-height: calc(100vh - 15em); */
   overflow: hidden;
   position: fixed;
   bottom: 0;
   left: 0;
+  /* display: block; */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   border-radius: 50px 50px 0px 0px;
   animation: ${up} .2s ease-in-out forwards;
   background-color: ${props => props.theme.color.background};
+
+  @media (min-width: 31em) {
+    margin: 0 calc((100vw - 31em) / 2);
+  }
 `
 
 const ModalClose = styled.div`
