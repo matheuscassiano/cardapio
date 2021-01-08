@@ -9,6 +9,7 @@ const FooterContainer = styled.footer`
   left: 0;
   bottom: 0;
   background-color: ${props => props.theme.color.primary};
+  z-index: 2;
 
   * {
     color: white;

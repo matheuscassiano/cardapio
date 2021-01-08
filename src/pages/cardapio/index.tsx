@@ -13,13 +13,22 @@ import Footer from '../../components/Footer';
 
 import MenuList from '../../patterns/MenuList'
 import MenuListItem from '../../patterns/MenuListItem'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Modal from '../../patterns/Modal';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const Menu: React.FC<AppProps> = () => {
   const [modalActive, setModalActive] = useState(false)
+  const [sizeScreen, setSizeScreen] = useState({width: 100, height: 100})
+
+  useEffect(() => {
+    setSizeScreen({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    })
+  }, [])
+  
   return (
       <Background>
         <Header>
@@ -60,32 +69,32 @@ const Menu: React.FC<AppProps> = () => {
             </SwiperSlide>
           </SliderMenu>
         </Header>
-        <SliderBanner slidesPerView={1.3} spaceBetween={10}>
+        <SliderBanner slidesPerView={sizeScreen.width >= 750 ? 2 : 1.3} spaceBetween={10}>
           <SwiperSlide onClick={() => setModalActive(true)}>
-            <Image src="/banner.png" width="auto" height="130" />
+            <Image src="/banner.png" width={sizeScreen.width >= 750 ? 430 : "auto"} height={sizeScreen.width >= 750 ? 200 : 130} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/banner.png" width="auto" height="130" />
+            <Image src="/banner.png" width={sizeScreen.width >= 750 ? 430 : "auto"} height={sizeScreen.width >= 750 ? 200 : 130} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/banner.png" width="auto" height="130" />
+            <Image src="/banner.png" width={sizeScreen.width >= 750 ? 430 : "auto"} height={sizeScreen.width >= 750 ? 200 : 130} />
           </SwiperSlide>
         </SliderBanner>
         <LineBreak />
         <SubTitle>Promoções</SubTitle>
-        <SliderPromotion slidesPerView={1.8} spaceBetween={20}>
+        <SliderPromotion slidesPerView={sizeScreen.width >= 750 ? 2.8 : 1.8} spaceBetween={20}>
           <SwiperSlide>
-            <Image src="/prom.png" width="auto" height="100" />
+            <Image src="/prom.png"width={sizeScreen.width >= 750 ? 350 : "auto"} height={sizeScreen.width >= 750 ? 200 : 100} />
             <h6>Picanha na Chapa com Fritas</h6>
             <p><Price>R$ 50.00</Price> <SubPrice>R$ 66.00</SubPrice></p>
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/prom.png" width="auto" height="100" />
+            <Image src="/prom.png" width={sizeScreen.width >= 750 ? 350 : "auto"} height={sizeScreen.width >= 750 ? 200 : 100} />
             <h6>Picanha na Chapa com Fritas</h6>
             <p><Price>R$ 50.00</Price> <SubPrice>R$ 66.00</SubPrice></p>
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/prom.png" width="auto" height="100" />
+            <Image src="/prom.png" width={sizeScreen.width >= 750 ? 350 : "auto"} height={sizeScreen.width >= 750 ? 200 : 100} />
             <h6>Picanha na Chapa com Fritas</h6>
             <p><Price>R$ 50.00</Price> <SubPrice>R$ 66.00</SubPrice></p>
           </SwiperSlide>
@@ -93,6 +102,11 @@ const Menu: React.FC<AppProps> = () => {
         <LineBreak />
         <SubTitle>Cervejas</SubTitle>
         <MenuList>
+        <MenuListItem>
+            <Image src="/ellipse.png" width="45" height="45" />
+            <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>
+            <Price>R$ 9.00</Price>
+          </MenuListItem>
           <MenuListItem>
             <Image src="/ellipse.png" width="45" height="45" />
             <p>Skol - Cerveja Skol Pilsen <span>Bebida 600ml</span></p>

@@ -9,9 +9,9 @@ const Label = styled.label`
 `
 
 const Input = styled.input`
-  display: none;
+  display: none !important;
   border: 0;
-  width: 1em;
+  
   :checked + label {
     background-color: ${props => props.theme.color.primary};
   }

@@ -17,8 +17,9 @@ export default createGlobalStyle<any>`
 `
 
 export const Container = styled.form`
+  max-width: 33em;
+  /* max-height: 53vh; */
   width: 100%;
-  max-height: 53vh;
   overflow: auto;
   display: flex;
   align-items: center;

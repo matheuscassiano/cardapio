@@ -15,7 +15,8 @@ const Background = styled.main`
 
   input {
     width: calc(100% - 4em);
-    margin-left: 2em;
+    display: block;
+    margin: auto;
   }
 
   hr {
@@ -25,8 +26,8 @@ const Background = styled.main`
 `
 
 const Header = styled.div`
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 15px 15px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
 `
 
 const SliderMenu = styled(Swiper)`
@@ -66,9 +67,7 @@ const SliderBanner = styled(Swiper)`
   }
 
   .swiper-slide {
-    /* width: 100%; */
     display: flex;
-    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, .5); */
     border-radius: ${props => props.theme.radius.medium};
   }
 `
