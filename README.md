@@ -8,9 +8,10 @@ The **Menu Digital** is a onpensource website mobile for **Restaurants**.
 ## 🚀 Technology Utilizated
 The project was developed using the following technologies:
 
-- [NextJS](https://www.w3schools.com/html/)
-- [TypeScipt](https://www.w3schools.com/css/)
-- [Styled Componets](https://www.javascript.com/)
+- [NextJS](https://nextjs.org/)
+- [ReactJS](https://reactjs.org/)
+- [TypeScipt](https://www.typescriptlang.org/)
+- [Styled Componets](https://styled-components.com/)
 ---
 ## 📁 How to download the project
 ```bash
