@@ -1,10 +1,15 @@
 # Menu Digital
 - [About](#-about)
+- [Technology Utilizated](#-technology-utilizated)
+- [How to download the project](#-how-to-download-the-project)
+
 ---
+
 ## 📝 About
 The **Menu Digital** is a onpensource website mobile for **Restaurants**. 
 
 ---
+
 ## 🚀 Technology Utilizated
 The project was developed using the following technologies:
 
@@ -12,7 +17,9 @@ The project was developed using the following technologies:
 - [ReactJS](https://reactjs.org/)
 - [TypeScipt](https://www.typescriptlang.org/)
 - [Styled Componets](https://styled-components.com/)
+
 ---
+
 ## 📁 How to download the project
 ```bash
     # In this first part you will clone the repository
@@ -28,5 +35,7 @@ The project was developed using the following technologies:
     $ yarn start
 
 ```
+
 ---
+
 Developed 👩‍💻 by Matheus Cassiano
