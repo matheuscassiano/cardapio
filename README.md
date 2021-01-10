@@ -1,3 +1,4 @@
+![Cover](https://user-images.githubusercontent.com/42722140/104124951-846ae400-5332-11eb-9581-aa16cc8640d7.png)
 # Menu Digital
 - [About](#-about)
 - [Technology Utilizated](#-technology-utilizated)
