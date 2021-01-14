@@ -7,7 +7,7 @@
 ---
 
 ## 📝 About
-The **Menu Digital** is a onpensource website mobile for **Restaurants**. 
+The **Menu Digital** is a onpensource website mobile for **Restaurants**. [Link to Figma](https://www.figma.com/file/Lu43KD29lT3NX2emGzd6A5/Resta-Web?node-id=1%3A2)
 
 ---
 
