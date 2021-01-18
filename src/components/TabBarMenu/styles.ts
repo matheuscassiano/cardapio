@@ -27,7 +27,7 @@ const Item = styled.div<Item>`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: ${({ active }) => active ? "green" : "black"};
+  color: ${(props) => props.active ? props.theme.color.primary : "black"};
 
   div {
     display: flex;
@@ -37,7 +37,7 @@ const Item = styled.div<Item>`
   svg {
     margin: .25em 0;
     path {
-      fill: ${({ active }) => active ? "green" : "black"};
+      fill: ${(props) => props.active ? props.theme.color.primary : "black"};
       /* stroke: ${({ active }) => active ? "green" : "black"}; */
     }
   }
