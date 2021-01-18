@@ -15,6 +15,7 @@ import MenuList from '../../patterns/MenuList'
 import MenuListItem from '../../patterns/MenuListItem'
 import { useEffect, useState } from 'react';
 import Modal from '../../patterns/Modal';
+import TabBarMenu from '../../components/TabBarMenu';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -28,7 +29,7 @@ const Menu: React.FC<AppProps> = () => {
       height: window.innerHeight,
     })
   }, [])
-  
+
   return (
       <Background>
         <Header>
@@ -141,11 +142,11 @@ const Menu: React.FC<AppProps> = () => {
             <Price>R$ 9.00</Price>
           </MenuListItem>
         </MenuList>
-        <Footer>
+        <TabBarMenu>
           <span></span>
           <a>Ver bandeija</a>
           <Price color="white">R$ 9.00</Price>
-        </Footer>
+        </TabBarMenu>
         <Modal active={modalActive} setActive={setModalActive} />
       </Background>
     )
