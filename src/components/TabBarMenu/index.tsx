@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { MenuContainer, Item } from './styles';
 import Menu from '../../assets/Menu.svg'
@@ -8,24 +9,24 @@ const TabBarMenu: React.FC = () => {
   const { pathname } = useRouter()
   return (
     <MenuContainer router={pathname}>
-      <Item href="/cardapio" active={pathname === "/cardapio" ? true : false}>
-        <div>
+      <Link href="/cardapio">
+        <Item active={pathname === "/cardapio" ? true : false}>
           <Menu />
           Cardápio
-        </div>
-      </Item>
-      <Item href="/chamar-garcom" active={pathname === "/chamar-garcom" ? true : false}>
-        <div>
+        </Item>
+      </Link>
+      <Link href="/chamar-garcom">
+        <Item active={pathname === "/chamar-garcom" ? true : false}>
           <Waiter />
           Chamar Garçom
-        </div>
-      </Item>
-      <Item href="/sua-conta" active={pathname === "/sua-conta" ? true : false}>
-        <div>
+        </Item>
+      </Link>
+      <Link href="/sua-conta">
+        <Item active={pathname === "/sua-conta" ? true : false}>
           <Bill />
           Sua Conta
-        </div>
-      </Item>
+        </Item>
+      </Link>
     </MenuContainer>
   )
 }

@@ -1,6 +1,4 @@
 import styled from 'styled-components'
-import Link from 'next/link'
-
 interface Menu {
   router: string;
 }
@@ -24,7 +22,7 @@ const MenuContainer = styled.nav<Menu>`
   z-index: 2;
 `
 
-const Item = styled(Link)<Item>`
+const Item = styled.div<Item>`
   display: flex;
   align-items: center;
   justify-content: center;
