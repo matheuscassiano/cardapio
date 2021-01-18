@@ -8,17 +8,23 @@ const TabBarMenu: React.FC = () => {
   const { pathname } = useRouter()
   return (
     <MenuContainer router={pathname}>
-      <Item active={pathname === "/cardapio" ? true : false}>
-        <Menu />
-        Cardápio
+      <Item href="/cardapio" active={pathname === "/cardapio" ? true : false}>
+        <div>
+          <Menu />
+          Cardápio
+        </div>
       </Item>
-      <Item active={pathname === "/chamar-garçom" ? true : false}>
-       <Waiter />
-        Chamar Garçom
+      <Item href="/chamar-garcom" active={pathname === "/chamar-garcom" ? true : false}>
+        <div>
+          <Waiter />
+          Chamar Garçom
+        </div>
       </Item>
-      <Item active={pathname === "/sua-conta" ? true : false}>
-        <Bill />
-        Sua Conta
+      <Item href="/sua-conta" active={pathname === "/sua-conta" ? true : false}>
+        <div>
+          <Bill />
+          Sua Conta
+        </div>
       </Item>
     </MenuContainer>
   )

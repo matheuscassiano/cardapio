@@ -1,14 +1,16 @@
 import styled from 'styled-components'
+import Link from 'next/link'
 
 interface Menu {
   router: string;
 }
 
 interface Item {
+  href: any;
   active: boolean;
 }
 
-const MenuContainer = styled.footer<Menu>`
+const MenuContainer = styled.nav<Menu>`
   width: 100%;
   height: 4.5em;
   display: flex;
@@ -22,12 +24,17 @@ const MenuContainer = styled.footer<Menu>`
   z-index: 2;
 `
 
-const Item = styled.div<Item>`
+const Item = styled(Link)<Item>`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   color: ${({ active }) => active ? "green" : "black"};
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
 
   svg {
     margin: .25em 0;
