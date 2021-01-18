@@ -4,7 +4,6 @@ const FooterContainer = styled.footer`
   width: 100%;
   height: 4em;
   display: grid;
-  display: none;
   grid-template-columns: 1fr 1fr 1fr;
   position: fixed;
   left: 0;
@@ -29,7 +28,6 @@ const FooterContainer = styled.footer`
     font-weight: ${props => props.theme.font.weight.medium};
     background-color: ${props => props.theme.color.background};
   }
-
   button {
     font-size: ${props => props.theme.font.size.regular};
     padding: 0 .5em;

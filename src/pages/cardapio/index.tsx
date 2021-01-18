@@ -9,7 +9,7 @@ import 'swiper/swiper.min.css';
 import { Title, SubTitle, LineBreak, Price, SubPrice } from '../../styles/global'
 import { Background, Header, SliderMenu, SliderBanner, SliderPromotion } from './styles'
 import InputFild from '../../components/InputFild'
-import Footer from '../../components/Footer';
+import Tray from '../../components/Tray';
 
 import MenuList from '../../patterns/MenuList'
 import MenuListItem from '../../patterns/MenuListItem'
@@ -142,11 +142,11 @@ const Menu: React.FC<AppProps> = () => {
             <Price>R$ 9.00</Price>
           </MenuListItem>
         </MenuList>
-        <TabBarMenu>
-          <span></span>
-          <a>Ver bandeija</a>
+        <TabBarMenu />
+        <Tray>
+          <p>Ver bandeija</p>
           <Price color="white">R$ 9.00</Price>
-        </TabBarMenu>
+        </Tray>
         <Modal active={modalActive} setActive={setModalActive} />
       </Background>
     )
