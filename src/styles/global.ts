@@ -15,6 +15,10 @@ export default createGlobalStyle<any>`
     font-weight: normal;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   body {
     font: 400 16px Roboto, sans-serif;
     color: ${props => props.theme.color.text};

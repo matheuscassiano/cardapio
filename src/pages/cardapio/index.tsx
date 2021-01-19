@@ -21,6 +21,7 @@ import TabBarMenu from '../../components/TabBarMenu';
 import Footer from '../../components/Footer';
 
 import Pratos from '../../assets/pratos.svg'
+import Link from 'next/link';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -246,7 +247,7 @@ const Menu: React.FC<AppProps> = () => {
           </BackgroundImageContainer>
           <Footer>
             <p>Total <br/> <span>R$100.00</span></p>
-            <a>Enviar Pedidos</a>
+            <Link href="/sua-conta">Enviar Pedidos</Link>
           </Footer>
         </Modal>
       </Background>
