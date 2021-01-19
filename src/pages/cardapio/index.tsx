@@ -210,7 +210,7 @@ const Menu: React.FC<AppProps> = () => {
         </Modal>
         <Modal title="Seus Pedidos" active={trayModalActive} setActive={setTrayModalActive}>
           <Footer>
-            <p>Total</p>
+            <p>Total <br/> <span>R$100.00</span></p>
             <a>Enviar Pedidos</a>
           </Footer>
         </Modal>
