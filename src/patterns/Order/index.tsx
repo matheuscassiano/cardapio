@@ -5,10 +5,6 @@ const Order: React.FC = ({ children }) => {
       <TableContainer>
         <Table>
             {children}
-            <ButtonContainer>
-                <Button>Pagar no Balcão</Button>
-                <Button>Pagar Online</Button>
-            </ButtonContainer>
         </Table>
     </TableContainer>
   )
@@ -17,5 +13,7 @@ const Order: React.FC = ({ children }) => {
 export {
     Order,
     TableLine,
-    Total
+    Total,
+    ButtonContainer, 
+    Button
 }

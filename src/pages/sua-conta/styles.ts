@@ -41,14 +41,9 @@ const AddMore = styled.div`
     padding: 1em 0;
 `
 
-const Order = styled.table`
-    justify-self: flex-end;
-`
-
 export {
     Background,
     Content,
     Clean,
-    AddMore,
-    Order
+    AddMore
 }

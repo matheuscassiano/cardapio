@@ -9,7 +9,7 @@ import { useState } from 'react'
 
 import MenuList from '../../patterns/MenuList'
 import MenuListItem from '../../patterns/MenuListItem'
-import { Order, TableLine, Total } from '../../patterns/Order'
+import { ButtonContainer, Button, Order, TableLine, Total } from '../../patterns/Order'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -65,6 +65,12 @@ const Bill: React.FC<AppProps> = () => {
               <Total>Total</Total>
               <Price><Total>R$ 291.50</Total></Price>
             </TableLine>
+            <ButtonContainer>
+                <Link href="/balcao">
+                  <Button>Pagar no Balcão</Button>
+                </Link>
+                <Button>Pagar Online</Button>
+            </ButtonContainer>
           </Order>
         </Content>
       )}

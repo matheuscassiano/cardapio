@@ -8,7 +8,7 @@ import 'swiper/swiper.min.css';
 
 import { Title, SubTitle, LineBreak, Price, SubPrice } from '../../styles/global'
 import { Background, Header, SliderMenu, SliderBanner, SliderPromotion } from './styles'
-import InputFild from '../../components/InputFild'
+import InputField from '../../components/InputField'
 import Tray from '../../components/Tray';
 
 import MenuList from '../../patterns/MenuList'
@@ -42,7 +42,7 @@ const Menu: React.FC<AppProps> = () => {
       <Background>
         <Header>
           <Title>Mesa 12</Title>
-          <InputFild placeholder="Pesquisar pratos" />
+          <InputField placeholder="Pesquisar pratos" />
           <SliderMenu slidesPerView={4}>
             <SwiperSlide>
               <Image src="/beer.png" width="25" height="25" />

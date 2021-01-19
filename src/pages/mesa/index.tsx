@@ -1,7 +1,7 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router'
 import { Container, SubTitle, Title } from '../../styles/global'
 import { Background, Info, Button } from './styles'
-import InputFild from '../../components/InputFild'
+import InputField from '../../components/InputField'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
@@ -26,7 +26,7 @@ const Table: React.FC<AppProps> = () => {
         <Container>
           <div>
             <SubTitle>Preencha as Informações</SubTitle>
-            <InputFild as="select">
+            <InputField as="select">
               <option disabled selected>Selecione sua mesa</option>
               <option value="1">Mesa 01</option>
               <option value="2">Mesa 02</option>
@@ -34,8 +34,8 @@ const Table: React.FC<AppProps> = () => {
               <option value="4">Mesa 04</option>
               <option value="5">Mesa 05</option>
               <option value="6">Mesa 06</option>
-            </InputFild>
-            <InputFild placeholder="Digite a senha da sua mesa" />
+            </InputField>
+            <InputField placeholder="Digite a senha da sua mesa" />
             <Info>Caso não tenha a senha da sua mesa, chame algum garçom e peça a ele a senha</Info>
             <Link href="/cardapio">
               <Button>
