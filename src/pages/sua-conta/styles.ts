@@ -2,8 +2,17 @@ import styled from 'styled-components'
 
 const Background = styled.main`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: ${props => props.theme.color.background};
+`
+
+const Content = styled.section`
+    width: 100%;
+    height: calc(100vh - 8em);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    padding-bottom: 5em;
 `
 
 const Clean = styled.div`
@@ -24,7 +33,22 @@ const Clean = styled.div`
     }
 `
 
+const AddMore = styled.div`
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+`
+
+const Order = styled.table`
+    justify-self: flex-end;
+`
+
 export {
     Background,
-    Clean
+    Content,
+    Clean,
+    AddMore,
+    Order
 }
