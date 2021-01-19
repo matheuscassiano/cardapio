@@ -29,12 +29,13 @@ const ModalContainer = styled.div<Modal>`
 const ModalContent = styled.div`
   max-width: 31em;
   width: 100%;
-  /* max-height: calc(100vh - 15em); */
+  min-height: 30vh;
+  height: auto;
   overflow: hidden;
   position: fixed;
   bottom: 0;
   left: 0;
-  /* display: block; */
+  padding-bottom: 3em;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   border-radius: 50px 50px 0px 0px;
   animation: ${up} .2s ease-in-out forwards;
@@ -45,18 +46,29 @@ const ModalContent = styled.div`
   }
 `
 
+const ModalHeader = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 1.5em 1em;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+`
+
 const ModalClose = styled.div`
   width: 2em;
   height: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
-  top: 1em;
-  left: 1em;
   border-radius: ${props => props.theme.radius.full};
   background-color: rgba(255, 255, 255, .7);
-  z-index: 2;
+`
+
+const ModalTitle = styled.h3`
+  justify-self: center;
+  font-weight: 500;
 `
 
 const ModalImage = styled.div`
@@ -108,18 +120,34 @@ const ModalSelectedItems = styled.div`
 const ModalSelectItems = styled.div`
   min-height: 8em;
   max-height: 28vh;
-  padding-bottom: 3em;
   overflow: auto;
+`
+
+const BackgroundImageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2em;
+
+  p {
+    padding: 1em;
+    font-size: ${props => props.theme.font.size.regular};
+    font-weight: ${props => props.theme.font.weight.regular};
+  }
 `
 
 export {
   ModalContainer,
   ModalContent,
+  ModalHeader,
   ModalClose,
+  ModalTitle,
   ModalImage,
   ModalInfo,
   Name,
   Detail,
   ModalSelectedItems,
-  ModalSelectItems
+  ModalSelectItems,
+  BackgroundImageContainer
 }

@@ -10,6 +10,15 @@ export default createGlobalStyle<any>`
     font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   }
 
+  ul, li {
+    list-style: none;
+    font-weight: normal;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
   body {
     font: 400 16px Roboto, sans-serif;
     color: ${props => props.theme.color.text};
@@ -19,7 +28,6 @@ export default createGlobalStyle<any>`
 
 export const Container = styled.form`
   max-width: 33em;
-  /* max-height: 53vh; */
   width: 100%;
   overflow: auto;
   display: flex;
@@ -45,8 +53,7 @@ export const Title = styled.h1`
   text-align: center;
   color: ${props => props.color};
   padding: ${props => props.theme.field.gap.big};
-  /* padding-bottom: .5em; */
-  font-size: ${props => props.theme.font.size.regular};
+  font-size: ${props => props.theme.font.size.medium};
   font-weight: ${props => props.theme.font.weight.regular};
 `
 
