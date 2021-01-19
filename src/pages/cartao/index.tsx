@@ -6,6 +6,7 @@ import { Price, Title } from '../../styles/global'
 import { Background } from './styles'
 
 import Balcony from '../../assets/balcony.svg'
+import Card from '../../patterns/Card'
 
 const Table: React.FC<AppProps> = () => {
   return (
@@ -35,6 +36,9 @@ const Table: React.FC<AppProps> = () => {
                 <Price><Total>R$ 246.50</Total></Price>
             </TableLine>
         </Order>
+        <Card>
+            asdgh
+        </Card>
       </Background>
     )
 }
