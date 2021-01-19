@@ -1,13 +1,16 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router'
 import TabBarMenu from '../../components/TabBarMenu'
 
-import { Background, Content, Clean, AddMore, Order } from './styles'
+import { Background, Content, Clean, AddMore } from './styles'
 import { Title, Price } from '../../styles/global'
 
 import Empty from '../../assets/empty.svg'
 import { useState } from 'react'
+
 import MenuList from '../../patterns/MenuList'
 import MenuListItem from '../../patterns/MenuListItem'
+import { Order, TableLine, Total } from '../../patterns/Order'
+
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -50,18 +53,18 @@ const Bill: React.FC<AppProps> = () => {
             <Link href="/cardapio">Adicionar Mais pratos</Link>
           </AddMore>
           <Order>
-            <tr>
-              <td>Subtotal</td>
-              <td><Price>R$ 265.00</Price></td>
-            </tr>
-            <tr>
-              <td>Taxa de Serviço</td>
-              <td><Price>R$ 26.50</Price></td>
-            </tr>
-            <tr>
-              <td>Total</td>
-              <td><Price>R$ 291.50</Price></td>
-            </tr>
+            <TableLine>
+              <p>Subtotal</p>
+              <Price>R$ 265.00</Price>
+            </TableLine>
+            <TableLine>
+              <p>Taxa de Serviço</p>
+              <Price>R$ 26.50</Price>
+            </TableLine>
+            <TableLine>
+              <Total>Total</Total>
+              <Price><Total>R$ 291.50</Total></Price>
+            </TableLine>
           </Order>
         </Content>
       )}

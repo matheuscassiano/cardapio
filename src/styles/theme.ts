@@ -9,6 +9,7 @@ const theme = {
     secoundary: '#3fbb54',
     terciary: '#608F5F',
     background: 'white',
+    yellow: '#EED535',
     blue: '#2E65C6',
   },
 
