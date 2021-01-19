@@ -1,6 +1,6 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router'
 import { Container, Price, SubTitle, Title } from '../../styles/global'
-import { Background, Info, Button } from './styles'
+import { Background, Info } from './styles'
 import InputFild from '../../components/InputFild'
 import Image from 'next/image'
 import Link from 'next/link'
