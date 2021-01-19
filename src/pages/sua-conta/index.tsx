@@ -66,7 +66,9 @@ const Bill: React.FC<AppProps> = () => {
               <Price><Total>R$ 291.50</Total></Price>
             </TableLine>
             <ButtonContainer>
-                <Button>Pagar no Balcão</Button>
+                <Link href="/balcao">
+                  <Button>Pagar no Balcão</Button>
+                </Link>
                 <Button>Pagar Online</Button>
             </ButtonContainer>
           </Order>
