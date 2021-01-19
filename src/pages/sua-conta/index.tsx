@@ -69,7 +69,9 @@ const Bill: React.FC<AppProps> = () => {
                 <Link href="/balcao">
                   <Button>Pagar no Balcão</Button>
                 </Link>
-                <Button>Pagar Online</Button>
+                <Link href="/cartao">
+                  <Button>Pagar Online</Button>
+                </Link>
             </ButtonContainer>
           </Order>
         </Content>
