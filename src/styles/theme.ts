@@ -9,6 +9,7 @@ const theme = {
     secoundary: '#3fbb54',
     terciary: '#608F5F',
     background: 'white',
+    yellow: '#EED535',
     blue: '#2E65C6',
   },
 
@@ -16,7 +17,7 @@ const theme = {
     size: {
       small: '.9rem',
       regular: '1.2rem',
-      medium: '1.8rem',
+      medium: '1.5rem',
       big: '2.3rem'
     },
     weight: {
