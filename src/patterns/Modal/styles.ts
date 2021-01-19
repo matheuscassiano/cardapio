@@ -123,6 +123,20 @@ const ModalSelectItems = styled.div`
   overflow: auto;
 `
 
+const BackgroundImageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2em;
+
+  p {
+    padding: 1em;
+    font-size: ${props => props.theme.font.size.regular};
+    font-weight: ${props => props.theme.font.weight.regular};
+  }
+`
+
 export {
   ModalContainer,
   ModalContent,
@@ -134,5 +148,6 @@ export {
   Name,
   Detail,
   ModalSelectedItems,
-  ModalSelectItems
+  ModalSelectItems,
+  BackgroundImageContainer
 }

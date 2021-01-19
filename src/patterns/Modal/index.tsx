@@ -7,7 +7,8 @@ import MenuList from '../MenuList';
 import MenuListItem from '../MenuListItem';
 import {
   ModalContainer, ModalContent, ModalHeader, ModalClose, ModalTitle, ModalImage,
-  ModalInfo, Name, Detail, ModalSelectedItems, ModalSelectItems } from './styles';
+  ModalInfo, Name, Detail, ModalSelectedItems, ModalSelectItems,
+  BackgroundImageContainer } from './styles';
 
 interface Modal {
   active: Boolean;
@@ -39,5 +40,6 @@ export {
    Detail,
    ModalSelectedItems,
    ModalSelectItems,
-   CheckBox
+   CheckBox,
+   BackgroundImageContainer
 }

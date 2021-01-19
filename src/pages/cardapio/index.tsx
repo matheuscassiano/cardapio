@@ -14,9 +14,13 @@ import Tray from '../../components/Tray';
 import MenuList from '../../patterns/MenuList'
 import MenuListItem from '../../patterns/MenuListItem'
 import { useEffect, useState } from 'react';
-import { Modal, ModalImage, ModalInfo, Name, Detail, ModalSelectedItems, ModalSelectItems, CheckBox } from '../../patterns/Modal';
+import { 
+  Modal, ModalImage, ModalInfo, Name, Detail, ModalSelectedItems, 
+  ModalSelectItems, CheckBox, BackgroundImageContainer } from '../../patterns/Modal';
 import TabBarMenu from '../../components/TabBarMenu';
 import Footer from '../../components/Footer';
+
+import Pratos from '../../assets/pratos.svg'
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -212,7 +216,7 @@ const Menu: React.FC<AppProps> = () => {
           <br />
           <br />
           <br />
-          <ModalSelectItems>
+          <MenuList>
             <MenuListItem cols={4}>
               <Image src="/ellipse.png" width="45" height="45" />
               <p>Picanha na Chapa com Fritas <br/>
@@ -235,49 +239,11 @@ const Menu: React.FC<AppProps> = () => {
               <Price>R$ 9.00</Price>
               <CheckBox id="01"/>
             </MenuListItem>
-            <MenuListItem cols={4}>
-              <Image src="/ellipse.png" width="45" height="45" />
-              <p>Picanha na Chapa com Fritas <br/>
-                <ul>
-                  <li>+ Para 3 pessoas</li>
-                  <li>+ Batata frita</li>
-                </ul>
-              </p>
-              <Price>R$ 9.00</Price>
-              <CheckBox id="01"/>
-            </MenuListItem>
-            <MenuListItem cols={4}>
-              <Image src="/ellipse.png" width="45" height="45" />
-              <p>Picanha na Chapa com Fritas <br/>
-                <ul>
-                  <li>+ Para 3 pessoas</li>
-                  <li>+ Batata frita</li>
-                </ul>
-              </p>
-              <Price>R$ 9.00</Price>
-              <CheckBox id="01"/>
-            </MenuListItem><MenuListItem cols={4}>
-              <Image src="/ellipse.png" width="45" height="45" />
-              <p>Picanha na Chapa com Fritas <br/>
-                <ul>
-                  <li>+ Para 3 pessoas</li>
-                  <li>+ Batata frita</li>
-                </ul>
-              </p>
-              <Price>R$ 9.00</Price>
-              <CheckBox id="01"/>
-            </MenuListItem><MenuListItem cols={4}>
-              <Image src="/ellipse.png" width="45" height="45" />
-              <p>Picanha na Chapa com Fritas <br/>
-                <ul>
-                  <li>+ Para 3 pessoas</li>
-                  <li>+ Batata frita</li>
-                </ul>
-              </p>
-              <Price>R$ 9.00</Price>
-              <CheckBox id="01"/>
-            </MenuListItem>
-          </ModalSelectItems>
+          </MenuList>
+          <BackgroundImageContainer>
+            <Pratos />
+            <p>Adicione mais pratos</p>
+          </BackgroundImageContainer>
           <Footer>
             <p>Total <br/> <span>R$100.00</span></p>
             <a>Enviar Pedidos</a>
