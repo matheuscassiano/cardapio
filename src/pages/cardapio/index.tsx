@@ -14,13 +14,14 @@ import Tray from '../../components/Tray';
 import MenuList from '../../patterns/MenuList'
 import MenuListItem from '../../patterns/MenuListItem'
 import { useEffect, useState } from 'react';
-import Modal from '../../patterns/Modal';
+import { Modal } from '../../patterns/Modal';
 import TabBarMenu from '../../components/TabBarMenu';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const Menu: React.FC<AppProps> = () => {
   const [modalActive, setModalActive] = useState(false)
+  const [trayModalActive, setTrayModalActive] = useState(false)
   const [sizeScreen, setSizeScreen] = useState({width: 100, height: 100})
 
   useEffect(() => {
@@ -144,10 +145,29 @@ const Menu: React.FC<AppProps> = () => {
         </MenuList>
         <TabBarMenu />
         <Tray>
-          <p>Ver bandeija</p>
+          <p onClick={() => setTrayModalActive(true)}>Ver bandeija</p>
           <Price color="white">R$ 9.00</Price>
         </Tray>
         <Modal active={modalActive} setActive={setModalActive} />
+        <Modal active={trayModalActive} setActive={setTrayModalActive}>
+          
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+            <br />
+          
+        </Modal>
       </Background>
     )
 }

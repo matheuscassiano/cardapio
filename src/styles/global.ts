@@ -19,7 +19,6 @@ export default createGlobalStyle<any>`
 
 export const Container = styled.form`
   max-width: 33em;
-  /* max-height: 53vh; */
   width: 100%;
   overflow: auto;
   display: flex;
@@ -45,7 +44,6 @@ export const Title = styled.h1`
   text-align: center;
   color: ${props => props.color};
   padding: ${props => props.theme.field.gap.big};
-  /* padding-bottom: .5em; */
   font-size: ${props => props.theme.font.size.regular};
   font-weight: ${props => props.theme.font.weight.regular};
 `
