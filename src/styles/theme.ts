@@ -16,7 +16,7 @@ const theme = {
     size: {
       small: '.9rem',
       regular: '1.2rem',
-      medium: '1.8rem',
+      medium: '1.5rem',
       big: '2.3rem'
     },
     weight: {

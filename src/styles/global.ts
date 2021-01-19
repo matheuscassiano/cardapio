@@ -49,7 +49,7 @@ export const Title = styled.h1`
   text-align: center;
   color: ${props => props.color};
   padding: ${props => props.theme.field.gap.big};
-  font-size: ${props => props.theme.font.size.regular};
+  font-size: ${props => props.theme.font.size.medium};
   font-weight: ${props => props.theme.font.weight.regular};
 `
 
