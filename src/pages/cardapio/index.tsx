@@ -209,6 +209,75 @@ const Menu: React.FC<AppProps> = () => {
           </Footer>
         </Modal>
         <Modal title="Seus Pedidos" active={trayModalActive} setActive={setTrayModalActive}>
+          <br />
+          <br />
+          <br />
+          <ModalSelectItems>
+            <MenuListItem cols={4}>
+              <Image src="/ellipse.png" width="45" height="45" />
+              <p>Picanha na Chapa com Fritas <br/>
+                <ul>
+                  <li>+ Para 3 pessoas</li>
+                  <li>+ Batata frita</li>
+                </ul>
+              </p>
+              <Price>R$ 9.00</Price>
+              <CheckBox id="01"/>
+            </MenuListItem>
+            <MenuListItem cols={4}>
+              <Image src="/ellipse.png" width="45" height="45" />
+              <p>Picanha na Chapa com Fritas <br/>
+                <ul>
+                  <li>+ Para 3 pessoas</li>
+                  <li>+ Batata frita</li>
+                </ul>
+              </p>
+              <Price>R$ 9.00</Price>
+              <CheckBox id="01"/>
+            </MenuListItem>
+            <MenuListItem cols={4}>
+              <Image src="/ellipse.png" width="45" height="45" />
+              <p>Picanha na Chapa com Fritas <br/>
+                <ul>
+                  <li>+ Para 3 pessoas</li>
+                  <li>+ Batata frita</li>
+                </ul>
+              </p>
+              <Price>R$ 9.00</Price>
+              <CheckBox id="01"/>
+            </MenuListItem>
+            <MenuListItem cols={4}>
+              <Image src="/ellipse.png" width="45" height="45" />
+              <p>Picanha na Chapa com Fritas <br/>
+                <ul>
+                  <li>+ Para 3 pessoas</li>
+                  <li>+ Batata frita</li>
+                </ul>
+              </p>
+              <Price>R$ 9.00</Price>
+              <CheckBox id="01"/>
+            </MenuListItem><MenuListItem cols={4}>
+              <Image src="/ellipse.png" width="45" height="45" />
+              <p>Picanha na Chapa com Fritas <br/>
+                <ul>
+                  <li>+ Para 3 pessoas</li>
+                  <li>+ Batata frita</li>
+                </ul>
+              </p>
+              <Price>R$ 9.00</Price>
+              <CheckBox id="01"/>
+            </MenuListItem><MenuListItem cols={4}>
+              <Image src="/ellipse.png" width="45" height="45" />
+              <p>Picanha na Chapa com Fritas <br/>
+                <ul>
+                  <li>+ Para 3 pessoas</li>
+                  <li>+ Batata frita</li>
+                </ul>
+              </p>
+              <Price>R$ 9.00</Price>
+              <CheckBox id="01"/>
+            </MenuListItem>
+          </ModalSelectItems>
           <Footer>
             <p>Total <br/> <span>R$100.00</span></p>
             <a>Enviar Pedidos</a>

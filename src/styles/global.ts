@@ -10,6 +10,11 @@ export default createGlobalStyle<any>`
     font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   }
 
+  ul, li {
+    list-style: none;
+    font-weight: normal;
+  }
+
   body {
     font: 400 16px Roboto, sans-serif;
     color: ${props => props.theme.color.text};

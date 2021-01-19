@@ -30,10 +30,12 @@ const ModalContent = styled.div`
   max-width: 31em;
   width: 100%;
   min-height: 30vh;
+  height: auto;
   overflow: hidden;
   position: fixed;
   bottom: 0;
   left: 0;
+  padding-bottom: 3em;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   border-radius: 50px 50px 0px 0px;
   animation: ${up} .2s ease-in-out forwards;
@@ -118,7 +120,6 @@ const ModalSelectedItems = styled.div`
 const ModalSelectItems = styled.div`
   min-height: 8em;
   max-height: 28vh;
-  padding-bottom: 3em;
   overflow: auto;
 `
 
