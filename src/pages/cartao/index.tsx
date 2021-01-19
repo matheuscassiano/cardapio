@@ -1,12 +1,12 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router'
-import { Order, TableLine, Total } from '../../patterns/Order'
 import InputField from '../../components/InputField'
+import { Order, TableLine, Total } from '../../patterns/Order'
+import { Card, Label } from '../../patterns/Card'
 
 import { Price, Title } from '../../styles/global'
 import { Background } from './styles'
 
 import Balcony from '../../assets/balcony.svg'
-import Card from '../../patterns/Card'
 
 const Table: React.FC<AppProps> = () => {
   return (
@@ -37,7 +37,18 @@ const Table: React.FC<AppProps> = () => {
             </TableLine>
         </Order>
         <Card>
-            asdgh
+            <Label>Nome do titular do cartão </Label>
+            <InputField />
+            <Label>CPF do titular</Label>
+            <InputField />
+            <Label>Número do cartão</Label>
+            <InputField />
+            <div>
+                <Label>Data de validade</Label>
+                <InputField />
+                <Label>CVC</Label>
+                <InputField />
+            </div>
         </Card>
       </Background>
     )
