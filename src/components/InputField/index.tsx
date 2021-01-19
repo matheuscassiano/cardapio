@@ -5,8 +5,8 @@ interface FieldProps {
   placeholder?: String;
 }
 
-const InputFild: React.FC<FieldProps> = props => {
+const InputField: React.FC<FieldProps> = props => {
   return <Input as={props.as} placeholder={props.placeholder} >{props.children}</Input>
 }
 
-export default InputFild
+export default InputField

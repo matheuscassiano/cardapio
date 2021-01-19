@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 import SubmitButton from '../components/SubmitButton'
 import SocialButton from '../components/SocialButton'
-import InputFild from '../components/InputFild'
+import InputField from '../components/InputField'
 
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { SwiperSlide } from 'swiper/react';
@@ -34,8 +34,8 @@ const Home: React.FC<AppProps> = () => {
         </SwiperSlide>
       </Slider>
       <Container>
-        <InputFild placeholder="Nome" />
-        <InputFild placeholder="Email ou Telefone" />
+        <InputField placeholder="Nome" />
+        <InputField placeholder="Email ou Telefone" />
         <SubmitButton href="/mesa">Entrar</SubmitButton>
         <Wrapper>ou</Wrapper>
         <SocialButton
