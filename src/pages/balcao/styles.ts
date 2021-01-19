@@ -6,31 +6,28 @@ const Background = styled.main`
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 0 .5em;
   background-color: ${props => props.theme.color.background};
 
-  div {
-    align-self: normal;
+  input {
+    width: calc(100% - 2em);
+    margin-bottom: 2em;
   }
 `
 
-const Info = styled.p`
-  text-align: center;
-  width: ${props => props.theme.field.width};
-  margin: ${props => props.theme.field.gap.medium};
-  font-size: ${props => props.theme.font.size.regular};
-  font-weight: ${props => props.theme.font.weight.small};
-`
+const ImageContainer = styled.div`
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-const Button = styled.button`
-  width: 6em;
-  height: 6em;
-  border-radius: ${props => props.theme.radius.full};
-  background-color: ${props => props.theme.color.secoundary};
-  box-shadow: 0px 0px 10px ${props => props.theme.color.secoundary}f0;
+    svg {
+        max-width: 50vw;
+    }
 `
 
 export {
   Background,
-  Info,
-  Button
+  ImageContainer
 }
