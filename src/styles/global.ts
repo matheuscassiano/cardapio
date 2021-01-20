@@ -64,6 +64,12 @@ export const SubTitle = styled.h2`
   font-weight: ${props => props.theme.font.weight.medium};
 `
 
+export const Label = styled.label`
+    margin-top: .5em;
+    font-size: ${props => props.theme.font.size.small};
+    font-weight: ${props => props.theme.font.weight.regular};
+`
+
 export const LineBreak = styled.hr`
   width: 100%;
   height: .5px;

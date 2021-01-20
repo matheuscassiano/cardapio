@@ -8,13 +8,6 @@ const CardContainer = styled.div`
     border-radius: ${props => props.theme.radius.big};
 `
 
-const Label = styled.label`
-    margin-top: .5em;
-    font-size: ${props => props.theme.font.size.small};
-    font-weight: ${props => props.theme.font.weight.regular};
-`
-
 export {
-    CardContainer,
-    Label
+    CardContainer
 }

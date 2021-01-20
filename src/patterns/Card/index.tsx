@@ -1,10 +1,7 @@
-import { CardContainer, Label } from './styles';
+import { CardContainer } from './styles';
 
 const Card: React.FC = ({ children }) => {
   return <CardContainer>{children}</CardContainer>
 }
 
-export {
-    Card,
-    Label
-}
+export default Card
