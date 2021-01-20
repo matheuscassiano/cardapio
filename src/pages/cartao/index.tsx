@@ -1,5 +1,5 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router'
-import InputField from '../../components/InputField'
+import { InputBreak, InputField } from '../../components/InputField'
 import { Order, TableLine, Total } from '../../components/Order'
 import Card from '../../components/Card'
 
@@ -43,12 +43,14 @@ const Table: React.FC<AppProps> = () => {
             <InputField />
             <Label>Número do cartão</Label>
             <InputField />
-            <div>
-                <Label>Data de validade</Label>
-                <InputField />
-                <Label>CVC</Label>
-                <InputField />
-            </div>
+            <InputBreak>
+                <Label>Data de validade
+                    <InputField />
+                </Label>
+                <Label>CVC
+                    <InputField />
+                </Label>
+            </InputBreak>
         </Card>
       </Background>
     )

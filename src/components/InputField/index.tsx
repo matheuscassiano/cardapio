@@ -1,4 +1,4 @@
-import Input from './styles';
+import { Input, InputBreak } from './styles';
 
 interface FieldProps {
   as?: any;
@@ -9,4 +9,7 @@ const InputField: React.FC<FieldProps> = props => {
   return <Input as={props.as} placeholder={props.placeholder} >{props.children}</Input>
 }
 
-export default InputField
+export { 
+  InputField,
+  InputBreak
+}

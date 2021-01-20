@@ -8,7 +8,7 @@ import 'swiper/swiper.min.css';
 
 import { Title, SubTitle, LineBreak, Price, SubPrice } from '../../styles/global'
 import { Background, Header, SliderMenu, SliderBanner, SliderPromotion } from './styles'
-import InputField from '../../components/InputField'
+import { InputField } from '../../components/InputField'
 import Tray from '../../components/Tray';
 
 import MenuList from '../../components/MenuList'

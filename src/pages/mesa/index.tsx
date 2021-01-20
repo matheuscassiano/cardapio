@@ -1,7 +1,7 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router'
 import { Container, SubTitle, Title } from '../../styles/global'
 import { Background, Info, Button } from './styles'
-import InputField from '../../components/InputField'
+import { InputField } from '../../components/InputField'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'

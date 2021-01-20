@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 const Input = styled.input`
-  /* max-width: 30em; */
   padding: 0 1em;
   background-color: white;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
@@ -17,4 +16,19 @@ const Input = styled.input`
   }
 `
 
-export default Input
+const InputBreak = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  label {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+  }
+`
+
+export {
+  Input,
+  InputBreak
+}
