@@ -3,8 +3,8 @@ import { InputBreak, InputField } from '../../components/InputField'
 import { Order, TableLine, Total } from '../../components/Order'
 import Card from '../../components/Card'
 
-import { Price, Title, Label } from '../../styles/global'
-import { Background, Button, SliderContent } from './styles'
+import { Price, Title, Label, Button } from '../../styles/global'
+import { Background, SliderContent } from './styles'
 
 import CardImage from '../../assets/card.svg'
 import PixImage from '../../assets/pix.svg'

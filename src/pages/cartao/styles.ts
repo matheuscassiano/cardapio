@@ -10,16 +10,6 @@ const Background = styled.main`
   background-color: ${props => props.theme.color.background};
 `
 
-const Button = styled.button`
-  width: calc(100% - 2em);
-  color: white;
-  font-size: ${props => props.theme.font.size.small};
-  padding: .8em;
-  margin: 1.5em 0;
-  border-radius: ${props => props.theme.radius.medium};
-  background-color: ${props => props.theme.color.primary};
-`
-
 const SliderContent = styled.div`
   width: 100%;
   height: 100%;
@@ -36,6 +26,5 @@ const SliderContent = styled.div`
 
 export {
   Background,
-  Button,
   SliderContent
 }
