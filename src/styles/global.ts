@@ -91,3 +91,13 @@ export const SubPrice = styled.span`
   text-decoration-line: line-through;
   font-weight: ${props => props.theme.font.weight.small};
 `
+
+export const Button = styled.button`
+  width: calc(100% - 2em);
+  color: white;
+  font-size: ${props => props.theme.font.size.small};
+  padding: .8em;
+  margin: .25em 0;
+  border-radius: ${props => props.theme.radius.medium};
+  background-color: ${props => props.theme.color.primary};
+`

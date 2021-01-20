@@ -29,7 +29,7 @@ const ModalContainer = styled.div<Modal>`
 const ModalContent = styled.div`
   max-width: 31em;
   width: 100%;
-  min-height: 30vh;
+  min-height: 11em;
   height: auto;
   overflow: hidden;
   position: fixed;
