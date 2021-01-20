@@ -58,8 +58,8 @@ export const Title = styled.h1`
 `
 
 export const SubTitle = styled.h2`
-  width: ${props => props.theme.field.width};
   padding-bottom: 1.5em;
+  width: ${props => props.theme.field.width};
   font-size: ${props => props.theme.font.size.regular};
   font-weight: ${props => props.theme.font.weight.medium};
 `
