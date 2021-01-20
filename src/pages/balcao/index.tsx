@@ -1,6 +1,6 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router'
-import { Order, TableLine, Total } from '../../patterns/Order'
-import InputField from '../../components/InputField'
+import { Order, TableLine, Total } from '../../components/Order'
+import { InputField } from '../../components/InputField'
 
 import { Price, Title } from '../../styles/global'
 import { Background, Input, ImageContainer } from './styles'

@@ -8,15 +8,15 @@ import 'swiper/swiper.min.css';
 
 import { Title, SubTitle, LineBreak, Price, SubPrice } from '../../styles/global'
 import { Background, Header, SliderMenu, SliderBanner, SliderPromotion } from './styles'
-import InputField from '../../components/InputField'
+import { InputField } from '../../components/InputField'
 import Tray from '../../components/Tray';
 
-import MenuList from '../../patterns/MenuList'
-import MenuListItem from '../../patterns/MenuListItem'
+import MenuList from '../../components/MenuList'
+import MenuListItem from '../../components/MenuListItem'
 import { useEffect, useState } from 'react';
 import { 
   Modal, ModalImage, ModalInfo, Name, Detail, ModalSelectedItems, 
-  ModalSelectItems, CheckBox, BackgroundImageContainer } from '../../patterns/Modal';
+  ModalSelectItems, CheckBox, BackgroundImageContainer } from '../../components/Modal';
 import TabBarMenu from '../../components/TabBarMenu';
 import Footer from '../../components/Footer';
 
