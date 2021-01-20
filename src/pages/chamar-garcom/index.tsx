@@ -1,7 +1,7 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router'
 import TabBarMenu from '../../components/TabBarMenu'
 import { Title, Button } from '../../styles/global'
-import { Background, Content, Info, TextArea, CustomFooter, CustomButton } from './styles'
+import { Background, Content, Info, TextArea, CustomFooter, CustomButton, CustomButtonRed } from './styles'
 
 import Waiters from '../../assets/waiters.svg'
 import { Modal } from '../../components/Modal'
@@ -30,6 +30,10 @@ const Waiter: React.FC<AppProps> = () => {
         </CustomFooter>
       </Modal>
       <Modal title="Realmente deseja chamar o garçom?" active={callModalActive} setActive={setCallModalActive}>
+        <CustomFooter>
+          <CustomButtonRed>Não</CustomButtonRed>
+          <CustomButton>Enviar pedido</CustomButton>
+        </CustomFooter>
       </Modal>
     </Background>
     )

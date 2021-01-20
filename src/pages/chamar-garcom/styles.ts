@@ -8,10 +8,9 @@ const Background = styled.main`
 
 const Content = styled.section`
   width: calc(100% - 5em);
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  min-height: 70vh;
+  margin: 0 auto;
+  padding-bottom: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,19 +37,29 @@ const CustomFooter = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 1.5em;
   position: fixed;
   bottom: 0;
+  
+  span {
+    margin-left: auto;
+  }
 `
 
 const CustomButton = styled.button`
   color: white;
-  font-size: ${props => props.theme.font.size.small};
   padding: .8em 2em;
   margin: .25em 0;
+  font-size: ${props => props.theme.font.size.small};
   border-radius: ${props => props.theme.radius.medium};
   background-color: ${props => props.theme.color.primary};
+  box-shadow: 0 0 5px ${props => props.theme.color.primary}80;
+`
+
+const CustomButtonRed = styled(CustomButton)`
+  background-color: ${props => props.theme.color.red};
+  box-shadow: 0 0 5px ${props => props.theme.color.red}80;
 `
 
 export {
@@ -59,5 +68,6 @@ export {
     Info,
     TextArea,
     CustomFooter,
-    CustomButton
+    CustomButton,
+    CustomButtonRed
 }
