@@ -93,11 +93,11 @@ export const SubPrice = styled.span`
 `
 
 export const Button = styled.button`
-width: calc(100% - 2em);
-color: white;
-font-size: ${props => props.theme.font.size.small};
-padding: .8em;
-margin: .25em 0;
-border-radius: ${props => props.theme.radius.medium};
-background-color: ${props => props.theme.color.primary};
+  width: calc(100% - 2em);
+  color: white;
+  font-size: ${props => props.theme.font.size.small};
+  padding: .8em;
+  margin: .25em 0;
+  border-radius: ${props => props.theme.radius.medium};
+  background-color: ${props => props.theme.color.primary};
 `
