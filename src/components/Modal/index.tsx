@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
-import CheckBox from '../../components/CheckBox';
-import Footer from '../../components/Footer';
+import CheckBox from '../CheckBox';
+import Footer from '../Footer';
 import { Price, SubPrice } from '../../styles/global';
 import MenuList from '../MenuList';
 import MenuListItem from '../MenuListItem';

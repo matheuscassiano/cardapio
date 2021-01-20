@@ -7,9 +7,9 @@ import { Title, Price } from '../../styles/global'
 import Empty from '../../assets/empty.svg'
 import { useState } from 'react'
 
-import MenuList from '../../patterns/MenuList'
-import MenuListItem from '../../patterns/MenuListItem'
-import { ButtonContainer, Button, Order, TableLine, Total } from '../../patterns/Order'
+import MenuList from '../../components/MenuList'
+import MenuListItem from '../../components/MenuListItem'
+import { ButtonContainer, Button, Order, TableLine, Total } from '../../components/Order'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -69,7 +69,9 @@ const Bill: React.FC<AppProps> = () => {
                 <Link href="/balcao">
                   <Button>Pagar no Balcão</Button>
                 </Link>
-                <Button>Pagar Online</Button>
+                <Link href="/cartao">
+                  <Button>Pagar Online</Button>
+                </Link>
             </ButtonContainer>
           </Order>
         </Content>
