@@ -4,12 +4,15 @@ import { Order, TableLine, Total } from '../../components/Order'
 import Card from '../../components/Card'
 
 import { Price, Title, Label } from '../../styles/global'
-import { Background } from './styles'
+import { Background, Button } from './styles'
 
 import CardImage from '../../assets/card.svg'
 import PixImage from '../../assets/pix.svg'
+import { useState } from 'react'
 
 const Table: React.FC<AppProps> = () => {
+  const [selected, setSelected] = useState("card")
+
   return (
       <Background>
         <Title>Pagamento - Cartão</Title>
@@ -39,25 +42,36 @@ const Table: React.FC<AppProps> = () => {
         </Order>
         <Card>
             <InputBreak>
-                <CardImage />
-                <PixImage />
+                <CardImage onClick={() => setSelected('card')} />
+                <PixImage onClick={() => setSelected('pix')} />
             </InputBreak>
             <br/>
-            <Label>Nome do titular do cartão </Label>
-            <InputField />
-            <Label>CPF do titular</Label>
-            <InputField />
-            <Label>Número do cartão</Label>
-            <InputField />
-            <InputBreak>
-                <Label>Data de validade
-                    <InputField />
-                </Label>
-                <Label>CVC
-                    <InputField />
-                </Label>
-            </InputBreak>
+            {selected === "card" ? (
+                <>
+                <Label>Nome do titular do cartão </Label>
+                <InputField />
+                <Label>CPF do titular</Label>
+                <InputField />
+                <Label>Número do cartão</Label>
+                <InputField />
+                <InputBreak>
+                    <Label>Data de validade
+                        <InputField />
+                    </Label>
+                    <Label>CVC
+                        <InputField />
+                    </Label>
+                </InputBreak>
+                </>     
+            ): (
+                <h1>oi</h1>
+            )}
         </Card>
+        {selected === "card" ? (
+        <Button>Pagar com Cartão</Button>
+        ) : (
+            <Button>Copiar chave PIX</Button>
+        )}
       </Background>
     )
 }

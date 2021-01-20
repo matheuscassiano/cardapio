@@ -23,10 +23,17 @@ const InputBreak = styled.div`
   justify-content: space-between;
 
   label, svg {
-    width: 35%;
     height: auto;
     display: flex;
     flex-direction: column;
+  }
+
+  svg {
+    width: 35%;
+  }
+
+  label {
+    width: 45%;
   }
 `
 
