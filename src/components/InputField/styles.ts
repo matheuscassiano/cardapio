@@ -19,10 +19,12 @@ const Input = styled.input`
 const InputBreak = styled.div`
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
   justify-content: space-between;
 
-  label {
-    width: 45%;
+  label, svg {
+    width: 35%;
+    height: auto;
     display: flex;
     flex-direction: column;
   }

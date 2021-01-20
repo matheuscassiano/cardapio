@@ -6,7 +6,8 @@ import Card from '../../components/Card'
 import { Price, Title, Label } from '../../styles/global'
 import { Background } from './styles'
 
-import Balcony from '../../assets/balcony.svg'
+import CardImage from '../../assets/card.svg'
+import PixImage from '../../assets/pix.svg'
 
 const Table: React.FC<AppProps> = () => {
   return (
@@ -37,6 +38,11 @@ const Table: React.FC<AppProps> = () => {
             </TableLine>
         </Order>
         <Card>
+            <InputBreak>
+                <CardImage />
+                <PixImage />
+            </InputBreak>
+            <br/>
             <Label>Nome do titular do cartão </Label>
             <InputField />
             <Label>CPF do titular</Label>
