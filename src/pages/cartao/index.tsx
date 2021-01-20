@@ -4,14 +4,24 @@ import { Order, TableLine, Total } from '../../components/Order'
 import Card from '../../components/Card'
 
 import { Price, Title, Label } from '../../styles/global'
-import { Background, Button } from './styles'
+import { Background, Button, SliderContent } from './styles'
 
 import CardImage from '../../assets/card.svg'
 import PixImage from '../../assets/pix.svg'
+import PixOne from '../../assets/pix-01.svg'
+
 import { useState } from 'react'
+import { Modal } from '../../components/Modal'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+
+import 'swiper/components/pagination/pagination.min.css';
+import 'swiper/swiper-bundle.css';
 
 const Table: React.FC<AppProps> = () => {
   const [selected, setSelected] = useState("card")
+  const [pixModalActive, setPixModalActive] = useState(false)
 
   return (
       <Background>
@@ -64,14 +74,47 @@ const Table: React.FC<AppProps> = () => {
                 </InputBreak>
                 </>     
             ): (
-                <h1>oi</h1>
+                <>
+                <Label>Nome completo</Label>
+                <InputField />
+                <Label>CPF</Label>
+                <InputField />
+                </>
             )}
         </Card>
         {selected === "card" ? (
         <Button>Pagar com Cartão</Button>
-        ) : (
-            <Button>Copiar chave PIX</Button>
+        ): (
+            <Button onClick={() => setPixModalActive(true)}>Copiar chave PIX</Button>
         )}
+        <Modal active={pixModalActive} setActive={setPixModalActive}>
+        <Swiper 
+        slidesPerView={1}
+        autoplay={true}
+        pagination={{ clickable: true }}>
+            <SwiperSlide>
+            <SliderContent>
+                    <PixOne />
+                    <h4>É super facil pagar com o PIX!</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </SliderContent>
+            </SwiperSlide>
+            <SwiperSlide>
+                <SliderContent>
+                    <PixOne />
+                    <h4>É super facil pagar com o PIX!</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </SliderContent>
+            </SwiperSlide>
+            <SwiperSlide>
+                <SliderContent>
+                    <PixOne />
+                    <h4>É super facil pagar com o PIX!</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </SliderContent>
+            </SwiperSlide>
+        </Swiper>
+        </Modal>
       </Background>
     )
 }

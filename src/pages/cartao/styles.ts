@@ -20,7 +20,22 @@ const Button = styled.button`
   background-color: ${props => props.theme.color.primary};
 `
 
+const SliderContent = styled.div`
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 3em 0;
+  padding: 0 3em;
+  text-align: center;
+`
+
 export {
   Background,
-  Button
+  Button,
+  SliderContent
 }
