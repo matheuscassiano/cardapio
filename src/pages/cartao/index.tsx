@@ -25,7 +25,7 @@ const Table: React.FC<AppProps> = () => {
 
   return (
       <Background>
-        <Title>Pagamento - Cartão</Title>
+        <Title>Pagamento - {selected === "card" ? "Cartão" : "PIX"}</Title>
         <Order>
             <InputField placeholder="Cupom de desconto" />
             <TableLine>
