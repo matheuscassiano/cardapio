@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 interface SocialButton {
-  bgColor: any;
-  textColor: any;
+  bgColor: string;
+  textColor: string;
 }
 
 const Button = styled.button<SocialButton>`

@@ -2,7 +2,6 @@ import { Input, InputBreak } from './styles';
 
 interface FieldProps {
   as?: any;
-  defaltValue?: String;
   placeholder?: String;
 }
 
