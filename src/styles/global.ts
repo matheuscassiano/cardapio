@@ -101,3 +101,8 @@ export const Button = styled.button`
   border-radius: ${props => props.theme.radius.medium};
   background-color: ${props => props.theme.color.primary};
 `
+
+export const AddOnsList = styled.ul`
+opacity: .7;
+font-size: ${props => props.theme.font.size.small};
+`

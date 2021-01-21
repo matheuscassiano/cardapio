@@ -1,8 +1,8 @@
 import { Label, Input } from './styles';
 
 interface Label {
-  id: any;
-  htmlFor?: any;
+  id: string;
+  htmlFor?: string;
 }
 
 const CheckBox: React.FC<Label> = ({ id }) => (

@@ -1,8 +1,10 @@
-import GlobalStyle from '../styles/global'
-import { ThemeProvider } from 'styled-components'
 import theme from '../styles/theme'
+import { ThemeProvider } from 'styled-components'
+import { AppProps } from 'next/dist/next-server/lib/router/router'
 
-const App: React.FC<any> = ({ Component, pageProps }) => {
+import GlobalStyle from '../styles/global'
+
+const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
