@@ -6,8 +6,8 @@ import { SwiperSlide } from 'swiper/react'
 import 'swiper/components/pagination/pagination.min.css';
 import 'swiper/swiper.min.css';
 
-import { Title, SubTitle, LineBreak, Price, SubPrice } from '../../styles/global'
-import { Background, Header, SliderMenu, SliderBanner, SliderPromotion, AddOnsList } from './styles'
+import { Title, SubTitle, LineBreak, Price, SubPrice, AddOnsList } from '../../styles/global'
+import { Background, Header, SliderMenu, SliderBanner, SliderPromotion } from './styles'
 import { InputField } from '../../components/InputField'
 import Tray from '../../components/Tray';
 

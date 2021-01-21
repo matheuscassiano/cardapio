@@ -2,7 +2,7 @@ import { AppProps } from 'next/dist/next-server/lib/router/router'
 import TabBarMenu from '../../components/TabBarMenu'
 
 import { Background, Content, Clean, AddMore } from './styles'
-import { Title, Price } from '../../styles/global'
+import { Title, Price, AddOnsList } from '../../styles/global'
 
 import Empty from '../../assets/empty.svg'
 import { useState } from 'react'
@@ -30,12 +30,13 @@ const Bill: React.FC<AppProps> = () => {
           <MenuList>
             <MenuListItem cols={3}>
               <Image src="/ellipse.png" width="45" height="45" />
-              <p>1 Picanha na Chapa com Fritas<br/>
-                <ul>
+              <div>
+                <p>1 Picanha na Chapa com Fritas</p>
+                <AddOnsList>
                   <li>+ Para 3 pessoas</li>
                   <li>+ Batata Frita</li>
-                </ul>
-              </p>
+                </AddOnsList>
+              </div>
               <Price>R$ 50.00</Price>
             </MenuListItem>
             <MenuListItem cols={3}>

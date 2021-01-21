@@ -98,16 +98,10 @@ const SliderPromotion = styled(Swiper)`
   }
 `
 
-const AddOnsList = styled.ul`
-  opacity: .7;
-  font-size: ${props => props.theme.font.size.small};
-`
-
 export {
   Background,
   Header,
   SliderMenu,
   SliderBanner,
-  SliderPromotion,
-  AddOnsList
+  SliderPromotion
 }
