@@ -1,8 +1,7 @@
 import { AppProps } from 'next/dist/next-server/lib/router/router'
 import { Container, SubTitle, Title } from '../../styles/global'
-import { Background, Info, Button } from './styles'
+import { Background, TableImage, ArrowImage, Info, Button } from './styles'
 import { InputField } from '../../components/InputField'
-import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 
@@ -22,7 +21,7 @@ const Table: React.FC<AppProps> = () => {
   return (
       <Background>
         <Title color="white">Verificação de mesa</Title>
-        <Image src="/table.svg" alt="table" width={windowSize.width} height={windowSize.width * .4} layout="responsive" />
+        <TableImage />
         <Container>
           <div>
             <SubTitle>Preencha as Informações</SubTitle>
@@ -39,7 +38,7 @@ const Table: React.FC<AppProps> = () => {
             <Info>Caso não tenha a senha da sua mesa, chame algum garçom e peça a ele a senha</Info>
             <Link href="/cardapio">
               <Button>
-                <Image src="/arrow-right.svg" width="40" height="40" />
+                <ArrowImage />
               </Button>
             </Link>
           </div>

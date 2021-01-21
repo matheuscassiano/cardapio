@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import Table from '../../assets/table.svg'
+import Arrow from '../../assets/arrow-right.svg'
 
 const Background = styled.main`
   width: 100%;
@@ -11,6 +13,13 @@ const Background = styled.main`
   div {
     align-self: normal;
   }
+`
+
+const TableImage = styled(Table)`
+
+`
+const ArrowImage = styled(Arrow)`
+
 `
 
 const Info = styled.p`
@@ -31,6 +40,8 @@ const Button = styled.button`
 
 export {
   Background,
+  TableImage,
+  ArrowImage,
   Info,
   Button
 }
