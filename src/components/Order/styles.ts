@@ -9,7 +9,7 @@ const Table = styled.div`
   width: 100%;
 `
 
-const TableLine = styled.p`
+const TableLine = styled.div`
     display: flex;
     justify-content: space-between;
     margin: .5em 0;

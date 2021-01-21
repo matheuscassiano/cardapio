@@ -36,7 +36,7 @@ const Waiter: React.FC<AppProps> = () => {
         </CustomFooter>
       </Modal>
     </Background>
-    )
+  )
 }
 
 export default Waiter
