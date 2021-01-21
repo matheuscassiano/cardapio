@@ -7,7 +7,7 @@ import 'swiper/components/pagination/pagination.min.css';
 import 'swiper/swiper.min.css';
 
 import { Title, SubTitle, LineBreak, Price, SubPrice } from '../../styles/global'
-import { Background, Header, SliderMenu, SliderBanner, SliderPromotion } from './styles'
+import { Background, Header, SliderMenu, SliderBanner, SliderPromotion, AddOnsList } from './styles'
 import { InputField } from '../../components/InputField'
 import Tray from '../../components/Tray';
 
@@ -220,23 +220,25 @@ const Menu: React.FC<AppProps> = () => {
           <MenuList>
             <MenuListItem cols={4}>
               <Image src="/ellipse.png" width="45" height="45" />
-              <p>Picanha na Chapa com Fritas <br/>
-                <ul>
+              <div>
+                <p>Picanha na Chapa com Fritas</p>                
+                <AddOnsList>
                   <li>+ Para 3 pessoas</li>
                   <li>+ Batata frita</li>
-                </ul>
-              </p>
+                </AddOnsList>
+              </div>
               <Price>R$ 9.00</Price>
               <CheckBox id="01"/>
             </MenuListItem>
             <MenuListItem cols={4}>
               <Image src="/ellipse.png" width="45" height="45" />
-              <p>Picanha na Chapa com Fritas <br/>
-                <ul>
+              <div>
+                <p>Picanha na Chapa com Fritas</p>                
+                <AddOnsList>
                   <li>+ Para 3 pessoas</li>
                   <li>+ Batata frita</li>
-                </ul>
-              </p>
+                </AddOnsList>
+              </div>
               <Price>R$ 9.00</Price>
               <CheckBox id="01"/>
             </MenuListItem>
