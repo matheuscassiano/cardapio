@@ -25,61 +25,61 @@ const Bill: React.FC<AppProps> = () => {
           <Empty />
           <p>Você ainda não fez nenhum pedido, vá ate o cardápio para escolher</p>
         </Clean>
-      ): (
-        <Content>
-          <MenuList>
-            <MenuListItem cols={3}>
-              <Image src="/ellipse.png" width="45" height="45" />
-              <div>
-                <p>1 Picanha na Chapa com Fritas</p>
-                <AddOnsList>
-                  <li>+ Para 3 pessoas</li>
-                  <li>+ Batata Frita</li>
-                </AddOnsList>
-              </div>
-              <Price>R$ 50.00</Price>
-            </MenuListItem>
-            <MenuListItem cols={3}>
-              <Image src="/ellipse.png" width="45" height="45" />
-              <p>1 Camarão Grande</p>
-              <Price>R$ 49.00</Price>
-            </MenuListItem>
-            <MenuListItem cols={3}>
-              <Image src="/ellipse.png" width="45" height="45" />
-              <p>3 Coca-colas LS</p>
-              <Price>R$ 18.00</Price>
-            </MenuListItem>
-          </MenuList>
-          <AddMore>
-            <Link href="/cardapio">Adicionar Mais pratos</Link>
-          </AddMore>
-          <Order>
-            <TableLine>
-              <p>Subtotal</p>
-              <Price>R$ 265.00</Price>
-            </TableLine>
-            <TableLine>
-              <p>Taxa de Serviço</p>
-              <Price>R$ 26.50</Price>
-            </TableLine>
-            <TableLine>
-              <Total>Total</Total>
-              <Price><Total>R$ 291.50</Total></Price>
-            </TableLine>
-            <ButtonContainer>
+      ) : (
+          <Content>
+            <MenuList>
+              <MenuListItem cols={3}>
+                <Image src="/ellipse.png" width="45" height="45" />
+                <div>
+                  <p>1 Picanha na Chapa com Fritas</p>
+                  <AddOnsList>
+                    <li>+ Para 3 pessoas</li>
+                    <li>+ Batata Frita</li>
+                  </AddOnsList>
+                </div>
+                <Price>R$ 50.00</Price>
+              </MenuListItem>
+              <MenuListItem cols={3}>
+                <Image src="/ellipse.png" width="45" height="45" />
+                <p>1 Camarão Grande</p>
+                <Price>R$ 49.00</Price>
+              </MenuListItem>
+              <MenuListItem cols={3}>
+                <Image src="/ellipse.png" width="45" height="45" />
+                <p>3 Coca-colas LS</p>
+                <Price>R$ 18.00</Price>
+              </MenuListItem>
+            </MenuList>
+            <AddMore>
+              <Link href="/cardapio">Adicionar Mais pratos</Link>
+            </AddMore>
+            <Order>
+              <TableLine>
+                <p>Subtotal</p>
+                <Price>R$ 265.00</Price>
+              </TableLine>
+              <TableLine>
+                <p>Taxa de Serviço</p>
+                <Price>R$ 26.50</Price>
+              </TableLine>
+              <TableLine>
+                <Total>Total</Total>
+                <Price><Total>R$ 291.50</Total></Price>
+              </TableLine>
+              <ButtonContainer>
                 <Link href="/balcao">
                   <Button>Pagar no Balcão</Button>
                 </Link>
                 <Link href="/cartao">
                   <Button>Pagar Online</Button>
                 </Link>
-            </ButtonContainer>
-          </Order>
-        </Content>
-      )}
+              </ButtonContainer>
+            </Order>
+          </Content>
+        )}
       <TabBarMenu />
     </Background>
-    )
+  )
 }
 
 export default Bill
